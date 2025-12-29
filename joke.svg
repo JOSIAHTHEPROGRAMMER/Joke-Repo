@@ -8,6 +8,11 @@
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
   <text x="880" y="28" text-anchor="end" class="date">2025-12-29</text>
+<<<<<<< HEAD
   <text x="20" y="60" class="text">[2025-12-29] [Pun] To prove he was right, the flat-earther walked to the end of the Earth.</text>
 <text x="20" y="82" class="text">... He eventually came around.</text>
+=======
+  <text x="20" y="60" class="text">[2025-12-29] I told my computer I needed a break, and now it won’t stop sending me</text>
+<text x="20" y="82" class="text">“Ctrl‑Alt‑Delicious” memes.</text>
+>>>>>>> 8d016e83e15fa0a771bd9b3e1f7e7240b0edef2d
 </svg>

@@ -3,4 +3,8 @@ Tech giants are rapidly integrating AI into core products, promising a new era o
 [2025-12-29] Why do programmers prefer dark mode? Because light attracts bugs.
 [2025-12-29] Cache invalidation is still undefeated.
 [2025-12-29] Why do programmers prefer dark mode? Because light attracts bugs.
+<<<<<<< HEAD
 [2025-12-29] [Pun] To prove he was right, the flat-earther walked to the end of the Earth. ... He eventually came around.
+=======
+[2025-12-29] I told my computer I needed a break, and now it won’t stop sending me “Ctrl‑Alt‑Delicious” memes.
+>>>>>>> 8d016e83e15fa0a771bd9b3e1f7e7240b0edef2d
