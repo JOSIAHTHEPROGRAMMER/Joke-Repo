@@ -1,8 +1,8 @@
-name: Joke Gemini Bot - Daily Update + Snake
+name: Silly Bot - Daily Chaos + Snake
 
 on:
   schedule:
-    - cron: "0 12 * * *" # daily at 12:00 UTC
+    - cron: "0 12 * * *"
   workflow_dispatch:
 
 permissions:
@@ -13,23 +13,50 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # ---------------- Checkout code ----------------
       - uses: actions/checkout@v4
 
+      # ---------------- Setup Node.js ----------------
       - uses: actions/setup-node@v4
         with:
           node-version: 20
 
+      # ---------------- Install dependencies ----------------
       - name: Install deps
         run: npm install
 
-      - name: Generate joke & news
-        id: gemini
+      # ---------------- Bot generation ----------------
+      - name: Generate joke, news, reaction
         run: |
-          OUTPUT="$(node main.js)"
-          echo "output=$OUTPUT" >> "$GITHUB_OUTPUT"
+          node main.js
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+          NEWS_API_KEY_2: ${{ secrets.NEWS_API_KEY_2 }}
 
+      # ---------------- Commit 1: Bot generated content ----------------
+      - name: Commit generated content (bot)
+        run: |
+          git config user.name "silly-bot"
+          git config user.email "silly-bot@users.noreply.github.com"
+
+          git add jokes.txt news.txt joke.svg news.svg
+          git commit -m "daily joke + news drop" || echo "No changes"
+          git commit -m "daily joke + news drop" || echo "No changes"
+          git push
+
+      # ---------------- Commit 2: Owner reaction ----------------
+      - name: Commit reaction (owner)
+        run: |
+          git config user.name "${{ github.repository_owner }}"
+          git config user.email "${{ github.repository_owner }}@users.noreply.github.com"
+
+          git add reaction.txt
+          git commit -m "my take on today's chaos" || echo "No changes"
+          git push
+
+      # ---------------- Generate GitHub snake ----------------
       - name: Generate GitHub snake
         uses: Platane/snk@v3
         with:
@@ -37,13 +64,13 @@ jobs:
           outputs: |
             dist/github-snake-dark.svg?palette=github-dark
 
-      - name: Commit changes
+      # ---------------- Commit 3: Snake update ----------------
+      - name: Commit snake
         run: |
-          git config user.name "gemini-bot"
-          git config user.email "gemini-bot@users.noreply.github.com"
+          git config user.name "silly-bot"
+          git config user.email "silly-bot@users.noreply.github.com"
 
-          git add jokes.txt news.txt joke.svg news.svg dist/
-
-          git commit -m "$(date +%Y-%m-%d) - Repo updated against my will: ${{ steps.gemini.outputs.output }}" || echo "No changes"
+          git add dist/
+          git commit -m "contribution snake update" || echo "No changes"
+          git commit -m "contribution snake update" || echo "No changes"
           git push
-
