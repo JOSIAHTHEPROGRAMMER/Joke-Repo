@@ -154,7 +154,7 @@ async function fetchGNews(category) {
 /* -------------------- Joke Fetcher -------------------- */
 
 async function getJoke() {
-  const res = await fetch("https://v2.jokeapi.dev/joke/Any");
+  const res = await fetch("https://v2.jokeapi.dev/joke/Programming");
   const data = await res.json();
 
   if (data.error) {
