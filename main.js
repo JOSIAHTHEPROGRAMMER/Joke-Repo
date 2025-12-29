@@ -133,7 +133,8 @@ async function generateWithFallback(prompt) {
   }
 }
 
-/* ===================== NEWS FETCHERS ===================== */
+/* -------------------- News Fetchers -------------------- */
+
 async function fetchNewsAPI(category) {
   if (!process.env.NEWS_API_KEY) throw new Error("No NewsAPI");
   const url = `https://newsapi.org/v2/top-headlines?category=${category}&language=en&pageSize=1&apiKey=${process.env.NEWS_API_KEY}`;
@@ -148,6 +149,28 @@ async function fetchGNews(category) {
   const res = await fetch(url);
   const data = await res.json();
   return data?.articles?.[0]?.title;
+}
+
+/* -------------------- Joke Fetcher -------------------- */
+
+async function getJoke() {
+  const res = await fetch("https://v2.jokeapi.dev/joke/Any");
+  const data = await res.json();
+
+  if (data.error) {
+    console.error("Failed to fetch joke");
+    return "[Error] Could not fetch joke";
+  }
+
+  let jokeText = "";
+
+  if (data.type === "single") {
+    jokeText = data.joke;
+  } else if (data.type === "twopart") {
+    jokeText = `${data.setup} ... ${data.delivery}`;
+  }
+
+  return `[${data.category}] ${jokeText}`;
 }
 
 /* -------------------- Main -------------------- */
@@ -169,7 +192,7 @@ One sentence. Slight sarcasm. No emojis.
 "${headline}"
 `;
 
-  const joke = await generateWithFallback(jokePrompt);
+  const joke = await getJoke();
   const reaction = await generateWithFallback(reactionPrompt);
 
   fs.appendFileSync("jokes.txt", `[${dateStr}] ${joke}\n`);
