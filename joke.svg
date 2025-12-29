@@ -7,6 +7,6 @@
   </style>
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2025-12-28</text>
-  <text x="20" y="60" class="text">[2025-12-28] Why do programmers prefer dark mode? Because light attracts bugs.</text>
+  <text x="880" y="28" text-anchor="end" class="date">2025-12-29</text>
+  <text x="20" y="60" class="text">[2025-12-29] Why do programmers prefer dark mode? Because light attracts bugs.</text>
 </svg>
