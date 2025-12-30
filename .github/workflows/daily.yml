@@ -2,7 +2,7 @@ name: Silly Bot - Daily Chaos + Snake
 
 on:
   schedule:
-    - cron: "0 12 * * *"
+    - cron: "0 12 */2 * *"
   workflow_dispatch:
 
 permissions:
