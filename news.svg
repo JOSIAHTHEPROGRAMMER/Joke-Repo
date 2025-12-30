@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #ff3f7f; }
+    .title { font: 700 16px monospace; fill: #58a6ff; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2025-12-29</text>
-  <text x="20" y="60" class="text">Sunday Preview – A putrescent crop begins to bloom - Warhammer Community</text>
+  <text x="880" y="28" text-anchor="end" class="date">2025-12-30</text>
+  <text x="20" y="60" class="text">New Species of Tinamou Discovered in Brazil</text>
 </svg>
