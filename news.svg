@@ -1,13 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #1dd3b0; }
+    .title { font: 700 16px monospace; fill: #9b5de5; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2025-12-31</text>
-  <text x="20" y="60" class="text">Newark Airport passenger may have exposed others to measles, New Jersey Health Department</text>
-<text x="20" y="82" class="text">says - ABC7 New York</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-01-01</text>
+  <text x="20" y="60" class="text">Space debris led to an orbital emergency in 2025. Will anything change? - Space</text>
 </svg>
