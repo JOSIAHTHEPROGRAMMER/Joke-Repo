@@ -1,1 +1,1 @@
-Ah, just what I needed—a Sunday horoscope from the Chicago Sun‑Times to tell me if the universe will finally stop throwing 404s at my code.
+Great, a BBC guide on self‑detox—just what I needed after spending the day chasing memory leaks and trying to purge my own codebase.
