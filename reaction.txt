@@ -1,1 +1,1 @@
-Great, a BBC guide on self‑detox—just what I needed after spending the day chasing memory leaks and trying to purge my own codebase.
+Great, another ultra‑high‑res Mars photo to make my bandwidth feel insecure while I debug a stack trace.
