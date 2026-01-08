@@ -5,8 +5,11 @@
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
+
+  
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-01-07</text>
-  <text x="20" y="60" class="text">[2026-01-07] [Programming] Why do programmers wear glasses? ... Because they need to C#</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-01-08</text>
+  <text x="20" y="60" class="text">He never returned.</text>
+  
 </svg>

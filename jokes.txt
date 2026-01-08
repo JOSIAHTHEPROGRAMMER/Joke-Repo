@@ -6,3 +6,7 @@
 [2026-01-03] [Programming] Debugging: Removing the needles from the haystack.
 [2026-01-05] [Programming] Why do programmers confuse Halloween and Christmas? ... Because Oct 31 = Dec 25
 [2026-01-07] [Programming] Why do programmers wear glasses? ... Because they need to C#
+[2026-01-08] [Programming] "Honey, go to the store and buy some eggs."
+"OK."
+"Oh and while you're there, get some milk."
+He never returned.

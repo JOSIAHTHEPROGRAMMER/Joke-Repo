@@ -1,12 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #1dd3b0; }
+    .title { font: 700 16px monospace; fill: #9b5de5; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
+
+  <a href="https://dailygalaxy.com/2026/01/nasa-new-mars-postcard-curiosity-rover/" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-01-07</text>
-  <text x="20" y="60" class="text">How to help your body detox itself - BBC</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-01-08</text>
+  <text x="20" y="60" class="text">NASA Just Shared a Stunning New Mars Postcard from the Curiosity Rover, You Have to See</text>
+<text x="20" y="82" class="text">It!</text>
+  </a>
 </svg>
