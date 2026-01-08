@@ -59,12 +59,21 @@ function wrapText(text, maxChars = 90) {
   return lines;
 }
 
-function writeSvg(filename, title, content, accent) {
+function writeSvg(filename, title, content, accent, link = null) {
   const lines = wrapText(content);
   const height = 70 + lines.length * 22;
+
   const textLines = lines
-    .map((l, i) => `<text x="20" y="${60 + i * 22}" class="text">${escapeSvg(l)}</text>`)
+    .map(
+      (l, i) =>
+        `<text x="20" y="${60 + i * 22}" class="text">${escapeSvg(l)}</text>`
+    )
     .join("\n");
+
+  const clickableStart = link
+    ? `<a href="${link}" target="_blank" rel="noopener noreferrer">`
+    : "";
+  const clickableEnd = link ? `</a>` : "";
 
   const svg = `
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="${height}">
@@ -74,15 +83,19 @@ function writeSvg(filename, title, content, accent) {
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
+
+  ${clickableStart}
   <rect width="100%" height="100%" class="bg"/>
-  <text x="20" y="28" class="title">${title}</text>
+  <text x="20" y="28" class="title">${escapeSvg(title)}</text>
   <text x="880" y="28" text-anchor="end" class="date">${dateStr}</text>
   ${textLines}
+  ${clickableEnd}
 </svg>
 `.trim();
 
   fs.writeFileSync(filename, svg);
 }
+
 
 /* -------------------- AI Providers -------------------- */
 const groq = process.env.GROQ_API_KEY ? new Groq({ apiKey: process.env.GROQ_API_KEY }) : null;
@@ -140,7 +153,13 @@ async function fetchNewsAPI(category) {
   const url = `https://newsapi.org/v2/top-headlines?category=${category}&language=en&pageSize=1&apiKey=${process.env.NEWS_API_KEY}`;
   const res = await fetch(url);
   const data = await res.json();
-  return data?.articles?.[0]?.title;
+  const article = data?.articles?.[0];
+  if (!article) throw new Error("No article");
+
+  return {
+    title: article.title,
+    url: article.url,
+  };
 }
 
 async function fetchGNews(category) {
@@ -148,7 +167,13 @@ async function fetchGNews(category) {
   const url = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&max=1&apikey=${process.env.NEWS_API_KEY_2}`;
   const res = await fetch(url);
   const data = await res.json();
-  return data?.articles?.[0]?.title;
+  const article = data?.articles?.[0];
+  if (!article) throw new Error("No article");
+
+  return {
+    title: article.title,
+    url: article.url,
+  };
 }
 
 /* -------------------- Joke Fetcher -------------------- */
@@ -177,13 +202,18 @@ async function getJoke() {
 async function main() {
   const jokePrompt = "Tell me a short random joke. One sentence.";
 
-  let headline;
-  try {
-    headline = useGNews ? await fetchGNews(category) : await fetchNewsAPI(category);
-  } catch (e) {
-    console.error("News fetch error:", e);
-    process.exit(1);
-  }
+let article;
+try {
+  article = useGNews
+    ? await fetchGNews(category)
+    : await fetchNewsAPI(category);
+} catch (e) {
+  console.error("News fetch error:", e);
+  process.exit(1);
+}
+
+const { title: headline, url: articleUrl } = article;
+
 
   const reactionPrompt = `
 React to this headline like a mildly tired but witty developer.
@@ -210,7 +240,7 @@ One sentence. Slight sarcasm. No emojis.
   };
 
   writeSvg("joke.svg", "Daily Joke", getLastLine("jokes.txt"), "#3fb950");
-  writeSvg("news.svg", "Daily News", headline, categoryColors[category] || "#58a6ff");
+  writeSvg("news.svg", "Daily News", headline, categoryColors[category] || "#58a6ff",   articleUrl);
 
   console.log("Joke:", joke);
   console.log("Headline:", headline);
