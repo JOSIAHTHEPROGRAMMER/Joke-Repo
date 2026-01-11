@@ -1,1 +1,1 @@
-Guess the only thing more fragile than my codebase is a one‑point NBA game.
+Looks like tariffs are the newest dependency that crashes both the economy and my already perpetually‑stalled CI pipeline.
