@@ -1,1 +1,1 @@
-Looks like tariffs are the newest dependency that crashes both the economy and my already perpetually‑stalled CI pipeline.
+Great, the EU finally stopped haggling over EV tariffs—now we can get back to debugging the real roadblocks.
