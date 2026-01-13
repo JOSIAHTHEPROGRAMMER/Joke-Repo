@@ -9,7 +9,7 @@
   
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-01-11</text>
-  <text x="20" y="60" class="text">The first string apologizes, "You'll have to excuse my friend, he's not null-terminated."</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-01-13</text>
+  <text x="20" y="60" class="text">[2026-01-13] [Programming] "We messed up the keming again guys."</text>
   
 </svg>
