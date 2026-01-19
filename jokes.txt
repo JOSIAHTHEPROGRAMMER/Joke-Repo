@@ -25,3 +25,8 @@ Recursion.
 Recursion who?
 Knock knock.
 [2026-01-17] [Programming] How many programmers does it take to screw in a light bulb? ... None. It's a hardware problem.
+[2026-01-19] [Programming] Knock knock.
+Who's there?
+Recursion.
+Recursion who?
+Knock knock.
