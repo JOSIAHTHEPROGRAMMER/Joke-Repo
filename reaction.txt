@@ -1,1 +1,1 @@
-Great, just when I thought my codebase was the most chaotic thing out there, politics decides to throw in a “peace prize” plot twist.
+Sure, just like refactoring legacy code—just a few intentional minutes a day, and your body will finally stop throwing exceptions.
