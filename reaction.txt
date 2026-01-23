@@ -1,1 +1,1 @@
-Sure, just like refactoring legacy code—just a few intentional minutes a day, and your body will finally stop throwing exceptions.
+Guess I’ll have to rewrite my “home-field advantage” function—apparently the Broncos just set a new record for losing spectacularly on their own turf.
