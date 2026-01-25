@@ -1,1 +1,1 @@
-Guess I’ll have to rewrite my “home-field advantage” function—apparently the Broncos just set a new record for losing spectacularly on their own turf.
+Guess it’s time to debug the foreign‑exchange API again—turns out the US is the ultimate dependency manager for Japan’s yen purchases.
