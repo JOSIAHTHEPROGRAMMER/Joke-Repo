@@ -1,1 +1,1 @@
-Guess it’s time to debug the foreign‑exchange API again—turns out the US is the ultimate dependency manager for Japan’s yen purchases.
+Looks like the Senate finally added another “investigate this” ticket to the ever‑growing backlog of political bug reports.
