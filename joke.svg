@@ -9,8 +9,8 @@
   
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-01-25</text>
-  <text x="20" y="60" class="text">[2026-01-25] [Programming] Why did the JavaScript heap close shop? ... It ran out of</text>
-<text x="20" y="82" class="text">memory.</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-01-27</text>
+  <text x="20" y="60" class="text">[2026-01-27] [Programming] UDP is better in the COVID era since it avoids unnecessary</text>
+<text x="20" y="82" class="text">handshakes.</text>
   
 </svg>
