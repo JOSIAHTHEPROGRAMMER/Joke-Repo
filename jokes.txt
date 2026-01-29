@@ -38,3 +38,4 @@ The Chemical engineer says "Impurities in the gasoline".
 The IT engineer says "Hey guys, I have an idea: How about we all get out of the car and get back in".
 [2026-01-25] [Programming] Why did the JavaScript heap close shop? ... It ran out of memory.
 [2026-01-27] [Programming] UDP is better in the COVID era since it avoids unnecessary handshakes.
+[2026-01-29] [Programming] How can you tell an extroverted programmer? ... He looks at YOUR shoes when he's talking.
