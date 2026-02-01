@@ -40,3 +40,4 @@ The IT engineer says "Hey guys, I have an idea: How about we all get out of the 
 [2026-01-27] [Programming] UDP is better in the COVID era since it avoids unnecessary handshakes.
 [2026-01-29] [Programming] How can you tell an extroverted programmer? ... He looks at YOUR shoes when he's talking.
 [2026-01-31] [Programming] How do you generate a random string? ... Put a Windows user in front of Vim and tell them to exit.
+[2026-02-01] [Programming] Hey baby I wish your name was asynchronous... ... ... so you'd give me a callback.
