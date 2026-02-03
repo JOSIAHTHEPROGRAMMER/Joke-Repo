@@ -9,8 +9,8 @@
   
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-02-01</text>
-  <text x="20" y="60" class="text">[2026-02-01] [Programming] Hey baby I wish your name was asynchronous... ... ... so you'd</text>
-<text x="20" y="82" class="text">give me a callback.</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-02-03</text>
+  <text x="20" y="60" class="text">[2026-02-03] [Programming] What are bits? ... Tiny things left when you drop your computer</text>
+<text x="20" y="82" class="text">down the stairs.</text>
   
 </svg>
