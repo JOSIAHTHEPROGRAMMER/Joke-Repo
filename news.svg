@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #58a6ff; }
+    .title { font: 700 16px monospace; fill: #9b5de5; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://abcnews.go.com/US/today-show-host-savannah-guthries-mother-reported-missing/story?id\\u003d129770864" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.sciencealert.com/it-may-be-safe-to-nuke-an-earthbound-asteroid-after-all-simulation-suggests" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-02-03</text>
-  <text x="20" y="60" class="text">'Today' show host Savannah Guthrie's mother reported missing in Arizona: Sheriff - ABC</text>
-<text x="20" y="82" class="text">News</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-02-05</text>
+  <text x="20" y="60" class="text">It May Be Safe to Nuke an Earthbound Asteroid After All, Simulation Suggests -</text>
+<text x="20" y="82" class="text">ScienceAlert</text>
   </a>
 </svg>
