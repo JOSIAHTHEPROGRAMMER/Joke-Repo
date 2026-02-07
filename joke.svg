@@ -9,8 +9,8 @@
   
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-02-05</text>
-  <text x="20" y="60" class="text">[2026-02-05] [Programming] Your momma is so fat, you need to switch to NTFS to store a</text>
-<text x="20" y="82" class="text">picture of her.</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-02-07</text>
+  <text x="20" y="60" class="text">[2026-02-07] [Programming] How do you know God is a shitty programmer? ... He wrote the OS</text>
+<text x="20" y="82" class="text">for an entire universe, but didn't leave a single useful comment.</text>
   
 </svg>

@@ -1,16 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #9b5de5; }
+    .title { font: 700 16px monospace; fill: #f5c518; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.sciencealert.com/it-may-be-safe-to-nuke-an-earthbound-asteroid-after-all-simulation-suggests" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.nintendolife.com/news/2026/02/digimon-story-time-stranger-switch-version-includes-free-switch-2-update" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-02-05</text>
-  <text x="20" y="60" class="text">It May Be Safe to Nuke an Earthbound Asteroid After All, Simulation Suggests -</text>
-<text x="20" y="82" class="text">ScienceAlert</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-02-07</text>
+  <text x="20" y="60" class="text">Digimon Story Time Stranger Switch Version Includes Free Switch 2 Update - Nintendo Life</text>
   </a>
 </svg>
