@@ -45,3 +45,7 @@ The IT engineer says "Hey guys, I have an idea: How about we all get out of the 
 [2026-02-05] [Programming] Your momma is so fat, you need to switch to NTFS to store a picture of her.
 [2026-02-07] [Programming] How do you know God is a shitty programmer? ... He wrote the OS for an entire universe, but didn't leave a single useful comment.
 [2026-02-09] [Programming] Why is 6 afraid of 7 in hexadecimal Canada? ... Because 7 8 9 A?
+[2026-02-11] [Programming] Judge: "I sentence you to the maximum punishment..."
+Me (thinking): "Please be death, please be death..."
+Judge: "Learn Java!"
+Me: "Damn."
