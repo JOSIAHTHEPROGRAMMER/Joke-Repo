@@ -1,1 +1,1 @@
-I’ll just treat my immune response like a legacy codebase: feed the cold, starve the fever, and pray the bug report doesn’t require a full system reboot.
+Great, another reminder that the only thing stricter than a compiler's ruleset is the bureaucracy deciding which helmets get to make it to the podium.
