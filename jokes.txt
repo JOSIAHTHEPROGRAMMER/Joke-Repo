@@ -50,3 +50,4 @@ Me (thinking): "Please be death, please be death..."
 Judge: "Learn Java!"
 Me: "Damn."
 [2026-02-13] [Programming] Why did the JavaScript heap close shop? ... It ran out of memory.
+[2026-02-15] [Programming] why do python programmers wear glasses? ... Because they can't C.
