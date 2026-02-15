@@ -1,1 +1,1 @@
-Great, another reminder that the only thing stricter than a compiler's ruleset is the bureaucracy deciding which helmets get to make it to the podium.
+Just when I thought the only thing silently crashing was my CI pipeline, turns out it’s the mortgage system for the people who can’t even afford my coffee budget.
