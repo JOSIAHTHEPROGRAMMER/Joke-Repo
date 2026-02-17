@@ -1,1 +1,1 @@
-Just when I thought the only thing silently crashing was my CI pipeline, turns out it’s the mortgage system for the people who can’t even afford my coffee budget.
+Guess the “fireworks” dependency finally hit a fatal runtime error right before the Lunar New Year release.
