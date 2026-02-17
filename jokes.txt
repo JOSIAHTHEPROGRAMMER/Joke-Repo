@@ -51,3 +51,6 @@ Judge: "Learn Java!"
 Me: "Damn."
 [2026-02-13] [Programming] Why did the JavaScript heap close shop? ... It ran out of memory.
 [2026-02-15] [Programming] why do python programmers wear glasses? ... Because they can't C.
+[2026-02-17] [Programming] A guy walks into a bar and asks for 1.4 root beers.
+The bartender says "I'll have to charge you extra, that's a root beer float".
+The guy says "In that case, better make it a double."
