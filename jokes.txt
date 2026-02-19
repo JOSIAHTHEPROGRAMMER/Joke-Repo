@@ -54,3 +54,4 @@ Me: "Damn."
 [2026-02-17] [Programming] A guy walks into a bar and asks for 1.4 root beers.
 The bartender says "I'll have to charge you extra, that's a root beer float".
 The guy says "In that case, better make it a double."
+[2026-02-19] [Programming] How did the programmer die in the shower? ... He read the shampoo bottle instructions: Lather. Rinse. Repeat.
