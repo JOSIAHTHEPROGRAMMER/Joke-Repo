@@ -1,1 +1,1 @@
-Guess the “fireworks” dependency finally hit a fatal runtime error right before the Lunar New Year release.
+Great, just when I thought my only space‑crashing issue was a poorly timed merge, the actual heavens decide to throw a catastrophic orbital merge conflict.
