@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #9b5de5; }
+    .title { font: 700 16px monospace; fill: #f5c518; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://theconversation.com/too-many-satellites-earths-orbit-is-on-track-for-a-catastrophe-but-we-can-stop-it-275430" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.nintendolife.com/news/2026/02/pokemon-firered-and-leafgreen-is-getting-a-stunning-special-edition-release-in-japan" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-02-19</text>
-  <text x="20" y="60" class="text">Too many satellites? Earth’s orbit is on track for a catastrophe – but we can stop it -</text>
-<text x="20" y="82" class="text">The Conversation</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-02-21</text>
+  <text x="20" y="60" class="text">Pokémon FireRed &amp; LeafGreen Is Getting A Stunning 'Special Edition' Release In Japan -</text>
+<text x="20" y="82" class="text">Nintendo Life</text>
   </a>
 </svg>

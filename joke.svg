@@ -9,8 +9,8 @@
   
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-02-19</text>
-  <text x="20" y="60" class="text">[2026-02-19] [Programming] How did the programmer die in the shower? ... He read the</text>
-<text x="20" y="82" class="text">shampoo bottle instructions: Lather. Rinse. Repeat.</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-02-21</text>
+  <text x="20" y="60" class="text">[2026-02-21] [Programming] How can you tell an extroverted programmer? ... He looks at</text>
+<text x="20" y="82" class="text">YOUR shoes when he's talking.</text>
   
 </svg>
