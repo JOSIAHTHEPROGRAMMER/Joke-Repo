@@ -1,16 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #f5c518; }
+    .title { font: 700 16px monospace; fill: #ff3f7f; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.nintendolife.com/news/2026/02/pokemon-firered-and-leafgreen-is-getting-a-stunning-special-edition-release-in-japan" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.theglobeandmail.com/life/horoscopes/article-your-lookahead-horoscope-february-22-2026/" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-02-21</text>
-  <text x="20" y="60" class="text">Pokémon FireRed &amp; LeafGreen Is Getting A Stunning 'Special Edition' Release In Japan -</text>
-<text x="20" y="82" class="text">Nintendo Life</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-02-23</text>
+  <text x="20" y="60" class="text">Your lookahead horoscope: February 22, 2026 - The Globe and Mail</text>
   </a>
 </svg>
