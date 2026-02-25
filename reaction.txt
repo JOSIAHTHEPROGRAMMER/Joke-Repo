@@ -1,1 +1,1 @@
-Great, another “lookahead” to parse—just what my backlog of existential bugs was missing.
+Great, just when I thought my codebase was the only thing with unpatched vulnerabilities, nature drops a reminder that skipping updates works everywhere.
