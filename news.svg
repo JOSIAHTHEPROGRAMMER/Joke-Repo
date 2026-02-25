@@ -1,15 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #ff3f7f; }
+    .title { font: 700 16px monospace; fill: #1dd3b0; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.theglobeandmail.com/life/horoscopes/article-your-lookahead-horoscope-february-22-2026/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.washingtonpost.com/wellness/2026/02/24/measles-vaccine-preventable-diseases/" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-02-23</text>
-  <text x="20" y="60" class="text">Your lookahead horoscope: February 22, 2026 - The Globe and Mail</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-02-25</text>
+  <text x="20" y="60" class="text">As measles spreads, these 9 vaccine-preventable diseases could be next - The Washington</text>
+<text x="20" y="82" class="text">Post</text>
   </a>
 </svg>
