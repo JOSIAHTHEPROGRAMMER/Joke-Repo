@@ -63,3 +63,4 @@ The guy says "In that case, better make it a double."
 
 "Java."
 [2026-02-25] [Programming] So what's a set of predefined steps the government might take to preserve the environment? ... An Al-Gore-ithm.
+[2026-02-27] [Programming] Algorithm: A word used by programmers when they don't want to explain how their code works.
