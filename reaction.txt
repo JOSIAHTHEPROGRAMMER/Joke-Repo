@@ -1,1 +1,1 @@
-Great, just when I thought my codebase was the only thing with unpatched vulnerabilities, nature drops a reminder that skipping updates works everywhere.
+Great, another “feature request” for the roster—just when I'm still trying to refactor last season's broken build.
