@@ -9,8 +9,8 @@
   
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-02-27</text>
-  <text x="20" y="60" class="text">[2026-02-27] [Programming] Algorithm: A word used by programmers when they don't want to</text>
-<text x="20" y="82" class="text">explain how their code works.</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-03-01</text>
+  <text x="20" y="60" class="text">[2026-03-01] [Programming] What's the object-oriented way to become wealthy? ...</text>
+<text x="20" y="82" class="text">Inheritance.</text>
   
 </svg>

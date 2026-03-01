@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #ff6b6b; }
+    .title { font: 700 16px monospace; fill: #ff9f1a; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.mlbtraderumors.com/2026/02/blue-jays-to-re-sign-max-scherzer.html" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.axios.com/2026/02/27/ai-amazon-openai-chips" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-02-27</text>
-  <text x="20" y="60" class="text">Blue Jays To Re-Sign Max Scherzer - MLB Trade Rumors</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-03-01</text>
+  <text x="20" y="60" class="text">Amazon deal with OpenAI shakes up AI landscape - Axios</text>
   </a>
 </svg>
