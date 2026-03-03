@@ -1,1 +1,1 @@
-Great, another Amazon‑OpenAI combo to remind me that my tiny side project now has to survive in a cloud‑powered AI jungle.
+Great, just when I thought my code had enough moving parts, the world decides to add a few more explosions for good measure.
