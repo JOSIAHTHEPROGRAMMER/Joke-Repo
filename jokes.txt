@@ -66,3 +66,4 @@ The guy says "In that case, better make it a double."
 [2026-02-27] [Programming] Algorithm: A word used by programmers when they don't want to explain how their code works.
 [2026-03-01] [Programming] What's the object-oriented way to become wealthy? ... Inheritance.
 [2026-03-03] [Programming] Debugging: Removing the needles from the haystack.
+[2026-03-05] [Programming] Hey baby I wish your name was asynchronous... ... ... so you'd give me a callback.

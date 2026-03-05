@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #58a6ff; }
+    .title { font: 700 16px monospace; fill: #9b5de5; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://apnews.com/live/iran-us-israel-hezbollah-strikes-03-02-2026" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.skyatnightmagazine.com/news/march-2026-blood-moon-lunar-eclipse-pictures" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-03-03</text>
-  <text x="20" y="60" class="text">Live updates: Oil tankers and refineries under attack as US and Israel exchange strikes</text>
-<text x="20" y="82" class="text">with Iran and war widens - Associated Press News</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-03-05</text>
+  <text x="20" y="60" class="text">In pictures – the blood Moon lunar eclipse wows observers across North America, Asia and</text>
+<text x="20" y="82" class="text">Australia - BBC Sky at Night Magazine</text>
   </a>
 </svg>
