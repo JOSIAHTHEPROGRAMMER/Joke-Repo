@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #9b5de5; }
+    .title { font: 700 16px monospace; fill: #f5c518; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.skyatnightmagazine.com/news/march-2026-blood-moon-lunar-eclipse-pictures" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.eurogamer.net/capcoms-astronaut-and-small-girl-starring-pragmata-gets-yet-another-new-release-date" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-03-05</text>
-  <text x="20" y="60" class="text">In pictures – the blood Moon lunar eclipse wows observers across North America, Asia and</text>
-<text x="20" y="82" class="text">Australia - BBC Sky at Night Magazine</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-03-07</text>
+  <text x="20" y="60" class="text">Capcom's astronaut and small girl-starring Pragmata gets yet another new release date -</text>
+<text x="20" y="82" class="text">Eurogamer</text>
   </a>
 </svg>
