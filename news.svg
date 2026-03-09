@@ -1,16 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #f5c518; }
+    .title { font: 700 16px monospace; fill: #ff3f7f; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.eurogamer.net/capcoms-astronaut-and-small-girl-starring-pragmata-gets-yet-another-new-release-date" target="_blank" rel="noopener noreferrer">
+  <a href="http://deadline.com/2026/03/cas-awards-2026-winners-list-cinema-audio-society-1236745560/" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-03-07</text>
-  <text x="20" y="60" class="text">Capcom's astronaut and small girl-starring Pragmata gets yet another new release date -</text>
-<text x="20" y="82" class="text">Eurogamer</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-03-09</text>
+  <text x="20" y="60" class="text">CAS Awards 2026 Winners List From Cinema Audio Society - Deadline</text>
   </a>
 </svg>

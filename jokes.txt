@@ -73,3 +73,8 @@ The guy says "In that case, better make it a double."
 [very long pause]
 
 "Java."
+[2026-03-09] [Programming] Knock knock.
+Who's there?
+Recursion.
+Recursion who?
+Knock knock.
