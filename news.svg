@@ -1,15 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #ff6b6b; }
+    .title { font: 700 16px monospace; fill: #ff9f1a; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.mlb.com/news/mlb-2026-world-baseball-classic-quarterfinal-matchups" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.cnbc.com/2026/03/14/paramount-wbd-2027-movie-slate.html" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-03-13</text>
-  <text x="20" y="60" class="text">Everything you need to know about the World Baseball Classic quarterfinals - MLB.com</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-03-15</text>
+  <text x="20" y="60" class="text">A Paramount-Warner Bros. movie slate could rule the 2027 box office, but is it</text>
+<text x="20" y="82" class="text">sustainable? - CNBC</text>
   </a>
 </svg>

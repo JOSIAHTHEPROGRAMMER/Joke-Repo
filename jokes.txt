@@ -80,3 +80,4 @@ Recursion who?
 Knock knock.
 [2026-03-11] [Programming] Why do programmers wear glasses? ... Because they need to C#
 [2026-03-13] [Programming] Why did the programmer jump on the table? ... Because debug was on his screen.
+[2026-03-15] [Programming] "We messed up the keming again guys."
