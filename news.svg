@@ -1,16 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #9b5de5; }
+    .title { font: 700 16px monospace; fill: #f5c518; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://dailygalaxy.com/2026/03/nearby-quiet-star-life-potential/" target="_blank" rel="noopener noreferrer">
+  <a href="https://mashable.com/article/google-fitbit-ai" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-03-19</text>
-  <text x="20" y="60" class="text">Astronomers Discover One of the Quietest Stars, a Strong Candidate for Life in Our Solar</text>
-<text x="20" y="82" class="text">Neighborhood - The Daily Galaxy</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-03-21</text>
+  <text x="20" y="60" class="text">Google's AI plans for Fitbit include your medical records - Mashable</text>
   </a>
 </svg>

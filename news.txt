@@ -48,3 +48,4 @@ Tech giants are rapidly integrating AI into core products, promising a new era o
 [2026-03-15] [BUSINESS] A Paramount-Warner Bros. movie slate could rule the 2027 box office, but is it sustainable? - CNBC
 [2026-03-17] [GENERAL] Drone hits Dubai airport as Iran targets commerce; Israel says war will go on - The Washington Post
 [2026-03-19] [SCIENCE] Astronomers Discover One of the Quietest Stars, a Strong Candidate for Life in Our Solar Neighborhood - The Daily Galaxy
+[2026-03-21] [TECHNOLOGY] Google's AI plans for Fitbit include your medical records - Mashable
