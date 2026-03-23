@@ -84,3 +84,4 @@ Knock knock.
 [2026-03-17] [Programming] Your mama's so FAT she can't save files bigger than 4GB.
 [2026-03-19] [Programming] Why was the JavaScript developer sad? ... Because they didn't Node how to Express themself!
 [2026-03-21] [Programming] What is a dying programmer's last program? ... Goodbye, world!
+[2026-03-23] [Programming] So what's a set of predefined steps the government might take to preserve the environment? ... An Al-Gore-ithm.
