@@ -9,8 +9,8 @@
   
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-03-23</text>
-  <text x="20" y="60" class="text">[2026-03-23] [Programming] So what's a set of predefined steps the government might take</text>
-<text x="20" y="82" class="text">to preserve the environment? ... An Al-Gore-ithm.</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-03-27</text>
+  <text x="20" y="60" class="text">[2026-03-27] [Programming] What do you get if you lock a monkey in a room with a</text>
+<text x="20" y="82" class="text">typewriter for 8 hours? ... A regular expression.</text>
   
 </svg>

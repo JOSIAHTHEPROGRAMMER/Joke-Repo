@@ -85,3 +85,4 @@ Knock knock.
 [2026-03-19] [Programming] Why was the JavaScript developer sad? ... Because they didn't Node how to Express themself!
 [2026-03-21] [Programming] What is a dying programmer's last program? ... Goodbye, world!
 [2026-03-23] [Programming] So what's a set of predefined steps the government might take to preserve the environment? ... An Al-Gore-ithm.
+[2026-03-27] [Programming] What do you get if you lock a monkey in a room with a typewriter for 8 hours? ... A regular expression.
