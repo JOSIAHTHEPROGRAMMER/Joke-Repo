@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #ff6b6b; }
+    .title { font: 700 16px monospace; fill: #ff9f1a; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="http://pitcherlist.com/fantasy-baseball-sp-roundup-3-25-dud-webb/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.npr.org/2026/03/28/nx-s1-5762756/airport-lines-tsa-shutdown-delays-flights-rebooking" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-03-27</text>
-  <text x="20" y="60" class="text">Fantasy Baseball SP Roundup 3/25: Dud Webb - Pitcher List</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-03-29</text>
+  <text x="20" y="60" class="text">Stuck in a long TSA line? Here are some strategies if you need to rebook your flight - NPR</text>
   </a>
 </svg>
