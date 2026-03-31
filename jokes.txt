@@ -87,3 +87,6 @@ Knock knock.
 [2026-03-23] [Programming] So what's a set of predefined steps the government might take to preserve the environment? ... An Al-Gore-ithm.
 [2026-03-27] [Programming] What do you get if you lock a monkey in a room with a typewriter for 8 hours? ... A regular expression.
 [2026-03-29] [Programming] Why do programmers confuse Halloween and Christmas? ... Because Oct 31 = Dec 25
+[2026-03-31] [Programming] "Can I tell you a TCP joke?"
+"Please tell me a TCP joke."
+"OK, I'll tell you a TCP joke."
