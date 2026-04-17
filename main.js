@@ -203,13 +203,27 @@ async function main() {
   const jokePrompt = "Tell me a short random joke. One sentence.";
 
 let article;
+
 try {
   article = useGNews
     ? await fetchGNews(category)
     : await fetchNewsAPI(category);
-} catch (e) {
-  console.error("News fetch error:", e);
-  process.exit(1);
+} catch (e1) {
+  console.warn("Primary news failed:", e1.message);
+
+  try {
+    // Try the other API as backup
+    article = useGNews
+      ? await fetchNewsAPI(category)
+      : await fetchGNews(category);
+  } catch (e2) {
+    console.warn("Backup news failed:", e2.message);
+
+    article = {
+      title: "Breaking: Nothing happened today",
+      url: "https://github.com",
+    };
+  }
 }
 
 const { title: headline, url: articleUrl } = article;
