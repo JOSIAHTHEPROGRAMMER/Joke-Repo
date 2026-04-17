@@ -4,22 +4,9 @@ import fetch from "node-fetch";
 import { GoogleGenAI } from "@google/genai";
 import { Groq } from "groq-sdk";
 
-// Check API keys
-if (
-  !process.env.GROQ_API_KEY &&
-  !process.env.GEMINI_API_KEY &&
-  !process.env.NEWS_API_KEY &&
-  !process.env.NEWS_API_KEY_2
-) {
-  console.error(" Missing API keys");
-  process.exit(1);
-}
-
-// Dates
 const today = new Date();
 const dateStr = today.toISOString().split("T")[0];
 
-/* ===================== CATEGORY ROTATION ===================== */
 const CATEGORY_ROTATION = [
   "business",
   "entertainment",
@@ -31,7 +18,6 @@ const CATEGORY_ROTATION = [
 ];
 const category = CATEGORY_ROTATION[today.getDay()];
 const useGNews = today.getDate() % 2 === 0;
-/* -------------------- helpers -------------------- */
 
 function getLastLine(file) {
   if (!fs.existsSync(file)) return "";
@@ -96,151 +82,126 @@ function writeSvg(filename, title, content, accent, link = null) {
   fs.writeFileSync(filename, svg);
 }
 
+const groq = process.env.GROQ_API_KEY
+  ? new Groq({ apiKey: process.env.GROQ_API_KEY })
+  : null;
 
-/* -------------------- AI Providers -------------------- */
-const groq = process.env.GROQ_API_KEY ? new Groq({ apiKey: process.env.GROQ_API_KEY }) : null;
-const geminiAI = process.env.GEMINI_API_KEY 
-? new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY }) 
-: null;
+const geminiAI = process.env.GEMINI_API_KEY
+  ? new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY })
+  : null;
 
 async function generateGroq(prompt) {
-  if (!groq) throw new Error("No GROQ key");
-
-  const chatCompletion = await groq.chat.completions.create({
+  if (!groq) throw new Error("no groq");
+  const res = await groq.chat.completions.create({
     messages: [{ role: "user", content: prompt }],
-    model: "openai/gpt-oss-120b",
-    temperature: 1,
-    max_completion_tokens: 8192,
-    top_p: 1,
-    stream: true,
-    reasoning_effort: "medium",
+    model: "llama-3.1-8b-instant",
+    temperature: 0.9,
+    max_completion_tokens: 60,
   });
-
-  let result = "";
-  for await (const chunk of chatCompletion) {
-    result += chunk.choices[0]?.delta?.content || "";
-  }
-
-  if (!result) throw new Error("Empty Groq response");
-  return result.replace(/\n/g, " ");
+  const text = res.choices?.[0]?.message?.content?.trim();
+  if (!text) throw new Error("empty groq");
+  return text.replace(/\n/g, " ");
 }
 
 async function generateGemini(prompt) {
-  if (!geminiAI) throw new Error("No GEMINI key");
+  if (!geminiAI) throw new Error("no gemini");
   const res = await geminiAI.models.generateContent({
     model: "gemini-2.0-flash",
     contents: prompt,
   });
   const text = res.candidates?.[0]?.content?.parts?.[0]?.text?.trim();
-  if (!text) throw new Error("Empty Gemini response");
+  if (!text) throw new Error("empty gemini");
   return text.replace(/\n/g, " ");
 }
 
 async function generateWithFallback(prompt) {
   try {
     return await generateGroq(prompt);
-  } catch (e) {
-    console.warn(" Groq failed:", e.message);
-    if (geminiAI) return await generateGemini(prompt);
-    throw e;
+  } catch (e1) {
+    try {
+      if (geminiAI) {
+        return await generateGemini(prompt);
+      }
+    } catch (e2) {}
+    const fallback = [
+      "yeah… that checks out.",
+      "cool. cool. totally normal.",
+      "this is why we can’t have nice things.",
+      "i should’ve stayed in bed.",
+    ];
+    return fallback[Math.floor(Math.random() * fallback.length)];
   }
 }
 
-/* -------------------- News Fetchers -------------------- */
-
 async function fetchNewsAPI(category) {
-  if (!process.env.NEWS_API_KEY) throw new Error("No NewsAPI");
+  if (!process.env.NEWS_API_KEY) throw new Error("no newsapi");
   const url = `https://newsapi.org/v2/top-headlines?category=${category}&language=en&pageSize=1&apiKey=${process.env.NEWS_API_KEY}`;
   const res = await fetch(url);
   const data = await res.json();
   const article = data?.articles?.[0];
-  if (!article) throw new Error("No article");
-
-  return {
-    title: article.title,
-    url: article.url,
-  };
+  if (!article) throw new Error("no article");
+  return { title: article.title, url: article.url };
 }
 
 async function fetchGNews(category) {
-  if (!process.env.NEWS_API_KEY_2) throw new Error("No GNews");
+  if (!process.env.NEWS_API_KEY_2) throw new Error("no gnews");
   const url = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&max=1&apikey=${process.env.NEWS_API_KEY_2}`;
   const res = await fetch(url);
   const data = await res.json();
   const article = data?.articles?.[0];
-  if (!article) throw new Error("No article");
-
-  return {
-    title: article.title,
-    url: article.url,
-  };
+  if (!article) throw new Error("no article");
+  return { title: article.title, url: article.url };
 }
 
-/* -------------------- Joke Fetcher -------------------- */
+async function fetchNewsSafe() {
+  try {
+    return useGNews
+      ? await fetchGNews(category)
+      : await fetchNewsAPI(category);
+  } catch (e1) {
+    try {
+      return useGNews
+        ? await fetchNewsAPI(category)
+        : await fetchGNews(category);
+    } catch (e2) {
+      return {
+        title: "Breaking: nothing happened today",
+        url: "https://github.com",
+      };
+    }
+  }
+}
 
 async function getJoke() {
-  const res = await fetch("https://v2.jokeapi.dev/joke/Programming");
-  const data = await res.json();
-
-  if (data.error) {
-    console.error("Failed to fetch joke");
-    return "[Error] Could not fetch joke";
-  }
-
-  let jokeText = "";
-
-  if (data.type === "single") {
-    jokeText = data.joke;
-  } else if (data.type === "twopart") {
-    jokeText = `${data.setup} ... ${data.delivery}`;
-  }
-
-  return `[${data.category}] ${jokeText}`;
-}
-
-/* -------------------- Main -------------------- */
-async function main() {
-  const jokePrompt = "Tell me a short random joke. One sentence.";
-
-let article;
-
-try {
-  article = useGNews
-    ? await fetchGNews(category)
-    : await fetchNewsAPI(category);
-} catch (e1) {
-  console.warn("Primary news failed:", e1.message);
-
   try {
-    // Try the other API as backup
-    article = useGNews
-      ? await fetchNewsAPI(category)
-      : await fetchGNews(category);
-  } catch (e2) {
-    console.warn("Backup news failed:", e2.message);
-
-    article = {
-      title: "Breaking: Nothing happened today",
-      url: "https://github.com",
-    };
-  }
+    const res = await fetch("https://v2.jokeapi.dev/joke/Programming");
+    const data = await res.json();
+    if (data.error) throw new Error();
+    if (data.type === "single") {
+      return `[${data.category}] ${data.joke}`;
+    }
+    if (data.type === "twopart") {
+      return `[${data.category}] ${data.setup} ... ${data.delivery}`;
+    }
+  } catch (e) {}
+  return "[Joke] something broke but pretend this was funny";
 }
 
-const { title: headline, url: articleUrl } = article;
+async function main() {
+  const article = await fetchNewsSafe();
+  const headline = article.title;
+  const articleUrl = article.url;
 
-
-  const reactionPrompt = `
-React to this headline like a mildly tired but witty developer.
-One sentence. Slight sarcasm. No emojis.
-
-"${headline}"
-`;
+  const reactionPrompt = `one sarcastic developer reaction to: "${headline}"`;
 
   const joke = await getJoke();
   const reaction = await generateWithFallback(reactionPrompt);
 
   fs.appendFileSync("jokes.txt", `[${dateStr}] ${joke}\n`);
-  fs.appendFileSync("news.txt", `[${dateStr}] [${category.toUpperCase()}] ${headline}\n`);
+  fs.appendFileSync(
+    "news.txt",
+    `[${dateStr}] [${category.toUpperCase()}] ${headline}\n`
+  );
   fs.writeFileSync("reaction.txt", reaction);
 
   const categoryColors = {
@@ -254,14 +215,17 @@ One sentence. Slight sarcasm. No emojis.
   };
 
   writeSvg("joke.svg", "Daily Joke", getLastLine("jokes.txt"), "#3fb950");
-  writeSvg("news.svg", "Daily News", headline, categoryColors[category] || "#58a6ff",   articleUrl);
+  writeSvg(
+    "news.svg",
+    "Daily News",
+    headline,
+    categoryColors[category] || "#58a6ff",
+    articleUrl
+  );
 
   console.log("Joke:", joke);
   console.log("Headline:", headline);
   console.log("Reaction:", reaction);
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+main().catch(() => {});
