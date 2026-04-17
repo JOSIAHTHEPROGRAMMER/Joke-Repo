@@ -90,3 +90,4 @@ Knock knock.
 [2026-03-31] [Programming] "Can I tell you a TCP joke?"
 "Please tell me a TCP joke."
 "OK, I'll tell you a TCP joke."
+[2026-04-17] [Programming] Why are modern programming languages so materialistic? ... Because they are object-oriented.
