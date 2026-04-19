@@ -92,3 +92,4 @@ Knock knock.
 "OK, I'll tell you a TCP joke."
 [2026-04-17] [Programming] Why are modern programming languages so materialistic? ... Because they are object-oriented.
 [2026-04-17] [Programming] Saying that Java is nice because it works on every OS is like saying that anal sex is nice because it works on every gender.
+[2026-04-19] [Programming] I have a joke about Stack Overflow, but you would say it's a duplicate.
