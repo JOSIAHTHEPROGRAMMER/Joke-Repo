@@ -9,8 +9,8 @@
   
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-04-21</text>
-  <text x="20" y="60" class="text">[2026-04-21] [Programming] What do you get if you lock a monkey in a room with a</text>
-<text x="20" y="82" class="text">typewriter for 8 hours? ... A regular expression.</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-04-23</text>
+  <text x="20" y="60" class="text">[2026-04-23] [Programming] The glass is neither half-full nor half-empty, the glass is</text>
+<text x="20" y="82" class="text">twice as big as it needs to be.</text>
   
 </svg>

@@ -94,3 +94,4 @@ Knock knock.
 [2026-04-17] [Programming] Saying that Java is nice because it works on every OS is like saying that anal sex is nice because it works on every gender.
 [2026-04-19] [Programming] I have a joke about Stack Overflow, but you would say it's a duplicate.
 [2026-04-21] [Programming] What do you get if you lock a monkey in a room with a typewriter for 8 hours? ... A regular expression.
+[2026-04-23] [Programming] The glass is neither half-full nor half-empty, the glass is twice as big as it needs to be.
