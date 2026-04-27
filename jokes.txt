@@ -96,3 +96,4 @@ Knock knock.
 [2026-04-21] [Programming] What do you get if you lock a monkey in a room with a typewriter for 8 hours? ... A regular expression.
 [2026-04-23] [Programming] The glass is neither half-full nor half-empty, the glass is twice as big as it needs to be.
 [2026-04-25] [Programming] Debugging: Removing the needles from the haystack.
+[2026-04-27] [Programming] UDP is better in the COVID era since it avoids unnecessary handshakes.
