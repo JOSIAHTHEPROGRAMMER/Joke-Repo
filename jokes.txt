@@ -97,3 +97,5 @@ Knock knock.
 [2026-04-23] [Programming] The glass is neither half-full nor half-empty, the glass is twice as big as it needs to be.
 [2026-04-25] [Programming] Debugging: Removing the needles from the haystack.
 [2026-04-27] [Programming] UDP is better in the COVID era since it avoids unnecessary handshakes.
+[2026-04-29] [Programming] A SQL statement walks into a bar and sees two tables.
+It approaches, and asks "may I join you?"
