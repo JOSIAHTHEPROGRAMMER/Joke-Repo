@@ -99,3 +99,10 @@ Knock knock.
 [2026-04-27] [Programming] UDP is better in the COVID era since it avoids unnecessary handshakes.
 [2026-04-29] [Programming] A SQL statement walks into a bar and sees two tables.
 It approaches, and asks "may I join you?"
+[2026-05-01] [Programming] The six stages of debugging:
+1. That can't happen.
+2. That doesn't happen on my machine.
+3. That shouldn't happen.
+4. Why does that happen?
+5. Oh, I see.
+6. How did that ever work?

@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #1dd3b0; }
+    .title { font: 700 16px monospace; fill: #ff6b6b; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.washingtonpost.com/wellness/2026/04/28/perimenopause-facts/" target="_blank" rel="noopener noreferrer">
+  <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNVJjY29MODBjOW1JWldUQmlMWnRwRzFhRWJBWndCT3p6R3ljekl2a1VYSEl2WVFHVllULWt4b0F3UlZaNmQ5V2RRNEUzSFliWmlUYlBsaGRTOGJqWjRDUm9LS1pVRkh4dFQ2c1dhbWhQU2xtOWxWUVpKY2FnRlQxNEZuaTVFcG1Jb1RZ?oc=5" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-04-29</text>
-  <text x="20" y="60" class="text">5 things OB/GYNs want you to know about perimenopause - The Washington Post</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-05-01</text>
+  <text x="20" y="60" class="text">These fans are boycotting the World Cup. Will they make it a bust? - NPR</text>
   </a>
 </svg>
