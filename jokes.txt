@@ -111,3 +111,4 @@ It approaches, and asks "may I join you?"
 - Did it work?
 - No?
 - It's HTML5.
+[2026-05-05] [Programming] Programming is like sex. ... Make one mistake and you end up supporting it for the rest of your life.
