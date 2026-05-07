@@ -1,1 +1,1 @@
-"Oh joy, the Met Gala is a thing again. Because the world really needed more overpriced designer gowns and an excuse for celebrities to pretend to be art aficionados. But hey, at least Beyoncé and Rihanna are attending, so I guess it's worth tuning in just to see who
+"Because what we really needed was a 'brain cleaning' mechanism that gets triggered by movement. I mean, who doesn't want their brain to get a little TLC every time they take a step? Just great, now we have to worry about our code not only handling the physics engine, collision detection
