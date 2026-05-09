@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #9b5de5; }
+    .title { font: 700 16px monospace; fill: #f5c518; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.sciencealert.com/movement-triggers-a-hidden-brain-cleaning-mechanism-study-shows" target="_blank" rel="noopener noreferrer">
+  <a href="https://mashable.com/article/apple-airpods-ai-cameras-final-testing" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-05-07</text>
-  <text x="20" y="60" class="text">Movement Triggers a Hidden 'Brain Cleaning' Mechanism, Study Shows - ScienceAlert</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-05-09</text>
+  <text x="20" y="60" class="text">AirPods with cameras reportedly in final testing at Apple - Mashable</text>
   </a>
 </svg>
