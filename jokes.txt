@@ -125,3 +125,4 @@ Violets are #0000ff,
 I use hex codes,
 But I'd use RGB for you.
 [2026-05-11] [Programming] Today I learned that changing random stuff until your program works is "hacky" and a "bad coding practice" but if you do it fast enough it's "Machine Learning" and pays 4x your current salary.
+[2026-05-13] [Programming] Why do programmers confuse Halloween and Christmas? ... Because Oct 31 = Dec 25
