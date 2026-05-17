@@ -1,1 +1,1 @@
-"Great, just what we needed. Another exciting season of gridiron drama and potentially crippling server loads due to all the Fantasy Football enthusiasts refreshing our app for the millionth time to check their rosters."
+"Just what I always wanted to code for - crop yields and price fluctuations. Can't wait to spend my Saturday night debugging some algorithm that tries to predict soil quality based on weather patterns."
