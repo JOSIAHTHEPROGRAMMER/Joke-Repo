@@ -1,1 +1,1 @@
-"Just what I always wanted to code for - crop yields and price fluctuations. Can't wait to spend my Saturday night debugging some algorithm that tries to predict soil quality based on weather patterns."
+Just what the world needs. Another utility company trying to get in on the AI data center action. I'm sure their expertise in 20th-century energy infrastructure will completely prepare them for the data center explosion. Can't wait to see how they handle the nuances of cloud computing, let alone the actual
