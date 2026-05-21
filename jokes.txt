@@ -129,3 +129,4 @@ But I'd use RGB for you.
 [2026-05-15] [Programming] Debugging: Removing the needles from the haystack.
 [2026-05-17] [Programming] Why are Assembly programmers always soaking wet? ... They work below C-level.
 [2026-05-19] [Programming] A man is smoking a cigarette and blowing smoke rings into the air. His girlfriend becomes irritated with the smoke and says "Can't you see the warning on the cigarette pack? Smoking is hazardous to your health!" to which the man replies, "I am a programmer.  We don't worry about warnings; we only worry about errors."
+[2026-05-21] [Programming] There are only 10 kinds of people in this world: those who know binary and those who don't.
