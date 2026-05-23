@@ -9,8 +9,8 @@
   
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-05-21</text>
-  <text x="20" y="60" class="text">[2026-05-21] [Programming] There are only 10 kinds of people in this world: those who know</text>
-<text x="20" y="82" class="text">binary and those who don't.</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-05-23</text>
+  <text x="20" y="60" class="text">[2026-05-23] [Programming] Programming is 10% science, 20% ingenuity, and 70% getting the</text>
+<text x="20" y="82" class="text">ingenuity to work with the science.</text>
   
 </svg>
