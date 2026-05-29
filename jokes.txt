@@ -137,3 +137,4 @@ But I'd use RGB for you.
 - Did it work?
 - No?
 - It's HTML5.
+[2026-05-29] [Programming] Why did the functional programmer get thrown out of school? ... Because he refused to take classes.
