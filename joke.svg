@@ -9,8 +9,8 @@
   
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-05-31</text>
-  <text x="20" y="60" class="text">[2026-05-31] [Programming] The glass is neither half-full nor half-empty, the glass is</text>
-<text x="20" y="82" class="text">twice as big as it needs to be.</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-06-01</text>
+  <text x="20" y="60" class="text">[2026-06-01] [Programming] Why did the web developer walk out of a resturant in disgust?</text>
+<text x="20" y="82" class="text">... The seating was laid out in tables.</text>
   
 </svg>
