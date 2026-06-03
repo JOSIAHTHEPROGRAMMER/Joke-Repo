@@ -9,8 +9,8 @@
   
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-06-01</text>
-  <text x="20" y="60" class="text">[2026-06-01] [Programming] Why did the web developer walk out of a resturant in disgust?</text>
-<text x="20" y="82" class="text">... The seating was laid out in tables.</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-06-03</text>
+  <text x="20" y="60" class="text">[2026-06-03] [Programming] What do you call a developer who doesn't comment code? ... A</text>
+<text x="20" y="82" class="text">developer.</text>
   
 </svg>

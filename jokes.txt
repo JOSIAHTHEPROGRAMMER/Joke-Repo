@@ -140,3 +140,4 @@ But I'd use RGB for you.
 [2026-05-29] [Programming] Why did the functional programmer get thrown out of school? ... Because he refused to take classes.
 [2026-05-31] [Programming] The glass is neither half-full nor half-empty, the glass is twice as big as it needs to be.
 [2026-06-01] [Programming] Why did the web developer walk out of a resturant in disgust? ... The seating was laid out in tables.
+[2026-06-03] [Programming] What do you call a developer who doesn't comment code? ... A developer.
