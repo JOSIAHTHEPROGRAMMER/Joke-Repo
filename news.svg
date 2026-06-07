@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #ff6b6b; }
+    .title { font: 700 16px monospace; fill: #ff9f1a; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.phillyvoice.com/eagles-fleeced-patriots-aj-brown-trade-howie-roseman/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.washingtonpost.com/politics/2026/06/05/tech-leaders-will-discuss-government-stakes-top-ai-firms-trump-says/" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-06-05</text>
-  <text x="20" y="60" class="text">The Eagles fleeced the Patriots in the A.J. Brown trade - PhillyVoice</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-06-07</text>
+  <text x="20" y="60" class="text">Trump says he’s considering government stake in top AI companies - The Washington Post</text>
   </a>
 </svg>
