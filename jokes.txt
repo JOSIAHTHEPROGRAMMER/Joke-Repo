@@ -144,3 +144,10 @@ But I'd use RGB for you.
 [2026-06-05] [Programming] The generation of random numbers is too important to be left to chance.
 [2026-06-07] [Programming] What is a dying programmer's last program? ... Goodbye, world!
 [2026-06-09] [Programming] Why did the Python programmer not respond to the foreign mails he got? ... Because his interpreter was busy collecting garbage.
+[2026-06-11] [Programming] The six stages of debugging:
+1. That can't happen.
+2. That doesn't happen on my machine.
+3. That shouldn't happen.
+4. Why does that happen?
+5. Oh, I see.
+6. How did that ever work?
