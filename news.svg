@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #1dd3b0; }
+    .title { font: 700 16px monospace; fill: #ff6b6b; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.washingtonpost.com/wellness/2026/06/16/this-exercise-sweet-spot-is-linked-greater-longevity/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.washingtonpost.com/politics/2026/06/18/trump-host-new-york-knicks-white-house/" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-06-17</text>
-  <text x="20" y="60" class="text">Column | This exercise ‘sweet spot’ is linked to greater longevity - The Washington Post</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-06-19</text>
+  <text x="20" y="60" class="text">Trump will host Knicks at White House, owner says - The Washington Post</text>
   </a>
 </svg>
