@@ -164,3 +164,5 @@ Violets are #0000ff,
 I use hex codes,
 But I'd use RGB for you.
 [2026-06-21] [Programming] Hey, wanna hear a joke? ... Parsing HTML with regex.
+[2026-06-23] [Programming] A SQL statement walks into a bar and sees two tables.
+It approaches, and asks "may I join you?"
