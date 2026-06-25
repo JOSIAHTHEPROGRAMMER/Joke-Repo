@@ -166,3 +166,8 @@ But I'd use RGB for you.
 [2026-06-21] [Programming] Hey, wanna hear a joke? ... Parsing HTML with regex.
 [2026-06-23] [Programming] A SQL statement walks into a bar and sees two tables.
 It approaches, and asks "may I join you?"
+[2026-06-25] [Programming] Knock knock.
+Who's there?
+Recursion.
+Recursion who?
+Knock knock.
