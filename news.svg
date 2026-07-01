@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #ff3f7f; }
+    .title { font: 700 16px monospace; fill: #1dd3b0; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.tmz.com/2026/06/28/rihanna-seen-at-asap-rocky-concert/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.foxnews.com/health/scientists-discover-possible-link-between-9-11-accelerated-aging" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-06-29</text>
-  <text x="20" y="60" class="text">A$AP Rocky Shouts Out Son Riot Onstage as Rihanna Watches in Crowd - TMZ</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-07-01</text>
+  <text x="20" y="60" class="text">Scientists discover possible link between 9/11 and accelerated aging - Fox News</text>
   </a>
 </svg>
