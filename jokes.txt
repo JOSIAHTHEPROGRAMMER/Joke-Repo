@@ -179,3 +179,4 @@ But I'd use RGB for you.
 [2026-06-29] [Programming] Your momma is so fat, you need to switch to NTFS to store a picture of her.
 [2026-07-01] [Programming] A SQL statement walks into a bar and sees two tables.
 It approaches, and asks "may I join you?"
+[2026-07-03] [Programming] A man is smoking a cigarette and blowing smoke rings into the air. His girlfriend becomes irritated with the smoke and says "Can't you see the warning on the cigarette pack? Smoking is hazardous to your health!" to which the man replies, "I am a programmer.  We don't worry about warnings; we only worry about errors."
