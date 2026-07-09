@@ -185,3 +185,7 @@ It approaches, and asks "may I join you?"
 The bartender asks, "Can I get you anything?"
 "Yeah," reply the bytes.
 "Make us a double."
+[2026-07-09] [Programming] Eight bytes walk into a bar.
+The bartender asks, "Can I get you anything?"
+"Yeah," reply the bytes.
+"Make us a double."

@@ -1,16 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="136">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #58a6ff; }
+    .title { font: 700 16px monospace; fill: #9b5de5; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.washingtonpost.com/sports/2026/07/05/us-top-scorer-folarin-balogun-allowed-play-world-cup-showdown-against-belgium/" target="_blank" rel="noopener noreferrer">
+  <a href="https://spacedaily.com/n-a-14-year-old-who-applied-to-nasa-was-rejected-and-ended-up-cleaning-a-space-toilet-on-work-experience-in-leicester-now-leads-the-team-at-the-european-space-agency-planning-how-humans-reach-mars/" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-07-07</text>
-  <text x="20" y="60" class="text">Trump urged FIFA to review Balogun’s suspension before star was cleared for World Cup -</text>
-<text x="20" y="82" class="text">The Washington Post</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-07-09</text>
+  <text x="20" y="60" class="text">A 14-year-old who applied to NASA, was rejected, and ended up cleaning a space toilet on</text>
+<text x="20" y="82" class="text">work experience in Leicester now leads Mars exploration studies at the European Space</text>
+<text x="20" y="104" class="text">Agency - Space Daily</text>
   </a>
 </svg>
