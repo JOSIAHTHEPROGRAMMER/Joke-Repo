@@ -9,7 +9,7 @@
   
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-07-09</text>
-  <text x="20" y="60" class="text">"Make us a double."</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-07-11</text>
+  <text x="20" y="60" class="text">[2026-07-11] [Programming] What is a dying programmer's last program? ... Goodbye, world!</text>
   
 </svg>
