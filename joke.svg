@@ -9,8 +9,8 @@
   
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-07-17</text>
-  <text x="20" y="60" class="text">[2026-07-17] [Programming] What do you call a developer who doesn't comment code? ... A</text>
-<text x="20" y="82" class="text">developer.</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-07-19</text>
+  <text x="20" y="60" class="text">[2026-07-19] [Programming] Why do programmers prefer using the dark mode? ... Because</text>
+<text x="20" y="82" class="text">light attracts bugs.</text>
   
 </svg>

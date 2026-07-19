@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #ff6b6b; }
+    .title { font: 700 16px monospace; fill: #ff9f1a; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://sports.yahoo.com/golf/live/british-open-thursday-live-updates-leaderboard-scottie-scheffler-is-on-a-heater-early-053000601.html" target="_blank" rel="noopener noreferrer">
+  <a href="https://fortune.com/2026/07/18/wall-street-analysts-spacex-outlook-stock-predictions/" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-07-17</text>
-  <text x="20" y="60" class="text">British Open Thursday live updates, leaderboard: Scottie Scheffler, Rory McIlroy are big</text>
-<text x="20" y="82" class="text">favorites early at Royal Birkdale - Yahoo Sports</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-07-19</text>
+  <text x="20" y="60" class="text">SpaceX stock falls back to earth shortly after Wall Street analysts release florid</text>
+<text x="20" y="82" class="text">targets: 'Paving the superhighway to the stars' - Fortune</text>
   </a>
 </svg>
