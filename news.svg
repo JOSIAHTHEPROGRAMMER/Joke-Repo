@@ -1,16 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #ff9f1a; }
+    .title { font: 700 16px monospace; fill: #58a6ff; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://fortune.com/2026/07/18/wall-street-analysts-spacex-outlook-stock-predictions/" target="_blank" rel="noopener noreferrer">
+  <a href="https://channellife.com.au/story/panasonic-validates-cockpit-virtualisation-on-google-cloud" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-07-19</text>
-  <text x="20" y="60" class="text">SpaceX stock falls back to earth shortly after Wall Street analysts release florid</text>
-<text x="20" y="82" class="text">targets: 'Paving the superhighway to the stars' - Fortune</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-07-21</text>
+  <text x="20" y="60" class="text">Panasonic validates cockpit virtualisation on Google Cloud</text>
   </a>
 </svg>
