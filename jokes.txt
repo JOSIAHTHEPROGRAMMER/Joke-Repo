@@ -200,3 +200,6 @@ The bartender asks, "Can I get you anything?"
 [2026-07-21] [Programming] "We messed up the keming again guys."
 [2026-07-23] [Programming] What's the object-oriented way to become wealthy? ... Inheritance.
 [2026-07-25] [Programming] Programming is like sex. ... Make one mistake and you end up supporting it for the rest of your life.
+[2026-07-27] [Programming] Documentation is like sex:
+When it's good, it's very good.
+When it's bad, it's better than nothing...

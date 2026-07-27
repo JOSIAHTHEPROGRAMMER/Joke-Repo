@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #f5c518; }
+    .title { font: 700 16px monospace; fill: #ff3f7f; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.theverge.com/tech/970489/lg-mcafee-ads-windows-microsoft-crackdown" target="_blank" rel="noopener noreferrer">
+  <a href="https://pagesix.com/2026/07/26/celebrity-news/emma-roberts-marries-actor-cody-john-in-idaho-wedding/" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-07-25</text>
-  <text x="20" y="60" class="text">Microsoft pressures LG into killing unwanted McAfee ads - The Verge</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-07-27</text>
+  <text x="20" y="60" class="text">Emma Roberts marries actor Cody John in lavish Idaho wedding - Page Six</text>
   </a>
 </svg>
