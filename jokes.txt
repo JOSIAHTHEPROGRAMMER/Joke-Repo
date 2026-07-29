@@ -203,3 +203,4 @@ The bartender asks, "Can I get you anything?"
 [2026-07-27] [Programming] Documentation is like sex:
 When it's good, it's very good.
 When it's bad, it's better than nothing...
+[2026-07-29] [Programming] Saying that Java is nice because it works on every OS is like saying that anal sex is nice because it works on every gender.
