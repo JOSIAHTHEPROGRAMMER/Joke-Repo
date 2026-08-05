@@ -9,8 +9,8 @@
   
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-08-03</text>
-  <text x="20" y="60" class="text">[2026-08-03] [Programming] Your momma is so fat, you need to switch to NTFS to store a</text>
-<text x="20" y="82" class="text">picture of her.</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-08-05</text>
+  <text x="20" y="60" class="text">[2026-08-05] [Programming] Two SQL tables sit at the bar. A query approaches and asks "Can</text>
+<text x="20" y="82" class="text">I join you?"</text>
   
 </svg>
