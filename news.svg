@@ -1,15 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #ff6b6b; }
+    .title { font: 700 16px monospace; fill: #ff9f1a; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.nba.com/news/dillon-brooks-suns-extension" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.washingtonpost.com/nation/2026/08/08/mall-rink-where-they-fell-love-skated-nearly-60-years-is-closing/" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-08-07</text>
-  <text x="20" y="60" class="text">Dillon Brooks, Suns agree on reported 3-year extension - NBA.com</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-08-09</text>
+  <text x="20" y="60" class="text">The mall rink where they fell in love and skated for nearly 60 years is closing - The</text>
+<text x="20" y="82" class="text">Washington Post</text>
   </a>
 </svg>
