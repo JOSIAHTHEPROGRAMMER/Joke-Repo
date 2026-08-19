@@ -217,3 +217,4 @@ The bartender asks, "Can I get you anything?"
 [2026-08-13] [Programming] Java and C were telling jokes. It was C's turn, so he writes something on the wall, points to it and says "Do you get the reference?" But Java didn't.
 [2026-08-15] [Programming] UDP is better in the COVID era since it avoids unnecessary handshakes.
 [2026-08-17] [Programming] Java and C were telling jokes. It was C's turn, so he writes something on the wall, points to it and says "Do you get the reference?" But Java didn't.
+[2026-08-19] [Programming] The glass is neither half-full nor half-empty, the glass is twice as big as it needs to be.
