@@ -220,3 +220,4 @@ The bartender asks, "Can I get you anything?"
 [2026-08-19] [Programming] The glass is neither half-full nor half-empty, the glass is twice as big as it needs to be.
 [2026-08-21] [Programming] Why do Java programmers hate communism? ... They don't want to live in a classless society.
 [2026-08-23] [Programming] ASCII silly question, get a silly ANSI.
+[2026-08-25] [Programming] What do you call a group of 8 Hobbits? ... A Hobbyte.
