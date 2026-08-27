@@ -221,3 +221,4 @@ The bartender asks, "Can I get you anything?"
 [2026-08-21] [Programming] Why do Java programmers hate communism? ... They don't want to live in a classless society.
 [2026-08-23] [Programming] ASCII silly question, get a silly ANSI.
 [2026-08-25] [Programming] What do you call a group of 8 Hobbits? ... A Hobbyte.
+[2026-08-27] [Programming] How did the programmer die in the shower? ... He read the shampoo bottle instructions: Lather. Rinse. Repeat.
