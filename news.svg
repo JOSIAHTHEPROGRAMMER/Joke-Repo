@@ -1,16 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #f5c518; }
+    .title { font: 700 16px monospace; fill: #ff3f7f; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.eurogamer.net/gta-6-frame-rate-ps5-xbox-series-x-s" target="_blank" rel="noopener noreferrer">
+  <a href="http://deadline.com/2026/08/box-office-global-spider-man-odyssey-dog-stars-bombs-universal-1237062804/" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-08-29</text>
-  <text x="20" y="60" class="text">Rockstar says GTA 6 runs at 30 FPS, while it's reportedly unsure about a 60 FPS</text>
-<text x="20" y="82" class="text">performance mode - Eurogamer.net</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-08-31</text>
+  <text x="20" y="60" class="text">Box Office Global: Universal Hits $3B Int'l First Any Studio, 'Dog Stars' Bombs - Deadline</text>
   </a>
 </svg>
