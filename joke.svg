@@ -9,8 +9,8 @@
   
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-09-03</text>
-  <text x="20" y="60" class="text">[2026-09-03] [Programming] Why do programmers confuse Halloween and Christmas? ... Because</text>
-<text x="20" y="82" class="text">Oct 31 = Dec 25</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-09-05</text>
+  <text x="20" y="60" class="text">[2026-09-05] [Programming] Why does no one like SQLrillex? ... He keeps dropping the</text>
+<text x="20" y="82" class="text">database.</text>
   
 </svg>
