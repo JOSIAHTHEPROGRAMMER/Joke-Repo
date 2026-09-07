@@ -227,3 +227,4 @@ The bartender asks, "Can I get you anything?"
 [2026-09-01] [Programming] How can you tell an extroverted programmer? ... He looks at YOUR shoes when he's talking.
 [2026-09-03] [Programming] Why do programmers confuse Halloween and Christmas? ... Because Oct 31 = Dec 25
 [2026-09-05] [Programming] Why does no one like SQLrillex? ... He keeps dropping the database.
+[2026-09-07] [Programming] How do you know God is a shitty programmer? ... He wrote the OS for an entire universe, but didn't leave a single useful comment.
