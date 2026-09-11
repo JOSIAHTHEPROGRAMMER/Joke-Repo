@@ -229,3 +229,4 @@ The bartender asks, "Can I get you anything?"
 [2026-09-05] [Programming] Why does no one like SQLrillex? ... He keeps dropping the database.
 [2026-09-07] [Programming] How do you know God is a shitty programmer? ... He wrote the OS for an entire universe, but didn't leave a single useful comment.
 [2026-09-09] [Programming] What is a dying programmer's last program? ... Goodbye, world!
+[2026-09-11] [Programming] The generation of random numbers is too important to be left to chance.
