@@ -236,3 +236,8 @@ The bartender asks, "Can I get you anything?"
 - No?
 - It's HTML5.
 [2026-09-15] [Programming] How did you make your friend rage? ... I implemented a greek question mark in his JavaScript code.
+[2026-09-17] [Programming] How do you tell HTML from HTML5?
+- Try it out in Internet Explorer
+- Did it work?
+- No?
+- It's HTML5.
