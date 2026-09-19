@@ -241,3 +241,4 @@ The bartender asks, "Can I get you anything?"
 - Did it work?
 - No?
 - It's HTML5.
+[2026-09-19] [Programming] Why are Assembly programmers always soaking wet? ... They work below C-level.
