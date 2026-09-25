@@ -247,3 +247,4 @@ The bartender asks, "Can I get you anything?"
 Me (thinking): "Please be death, please be death..."
 Judge: "Learn Java!"
 Me: "Damn."
+[2026-09-25] [Programming] Why do they call it hyper terminal? ... Too much Java.
