@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #58a6ff; }
+    .title { font: 700 16px monospace; fill: #9b5de5; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.wsj.com/world/u-k-probes-possible-iran-link-to-suspected-terror-plot-at-base-hosting-u-s-forces-b2328fb2" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.newsnationnow.com/space/radio-waves-faraway-planet-avi-loeb/" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-09-29</text>
-  <text x="20" y="60" class="text">U.K. Releases Suspects in Terror Plot at Base Hosting U.S. Forces - WSJ</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-10-01</text>
+  <text x="20" y="60" class="text">Radio waves detected on faraway planet — from aliens? - NewsNation</text>
   </a>
 </svg>
