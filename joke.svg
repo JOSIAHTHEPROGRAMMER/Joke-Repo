@@ -9,8 +9,8 @@
   
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-10-01</text>
-  <text x="20" y="60" class="text">[2026-10-01] [Programming] I have a joke about Stack Overflow, but you would say it's a</text>
-<text x="20" y="82" class="text">duplicate.</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-10-03</text>
+  <text x="20" y="60" class="text">[2026-10-03] [Programming] Why did the programmer jump on the table? ... Because debug was</text>
+<text x="20" y="82" class="text">on his screen.</text>
   
 </svg>

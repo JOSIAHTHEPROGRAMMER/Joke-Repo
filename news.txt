@@ -140,3 +140,4 @@ Tech giants are rapidly integrating AI into core products, promising a new era o
 [2026-09-27] [BUSINESS] The worst airports if you have a connecting flight - The Washington Post
 [2026-09-29] [GENERAL] U.K. Releases Suspects in Terror Plot at Base Hosting U.S. Forces - WSJ
 [2026-10-01] [SCIENCE] Radio waves detected on faraway planet — from aliens? - NewsNation
+[2026-10-03] [TECHNOLOGY] Home Assistant renames Home Assistant Cloud to Link - The Verge
