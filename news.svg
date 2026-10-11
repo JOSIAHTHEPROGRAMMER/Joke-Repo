@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #ff6b6b; }
+    .title { font: 700 16px monospace; fill: #ff9f1a; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
 
-  <a href="https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/pfts-week-5-2026-nfl-picks" target="_blank" rel="noopener noreferrer">
+  <a href="https://shopping.yahoo.com/deals/breaking-news/article/the-walmart-deals-event-ends-soon--40-major-last-chance-discounts-to-shop-now-134436803.html" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-10-09</text>
-  <text x="20" y="60" class="text">PFT’s Week 5 2026 NFL picks - NBC Sports</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-10-11</text>
+  <text x="20" y="60" class="text">The Walmart Deals event ends soon — 40+ major last-chance discounts to shop now - Yahoo</text>
   </a>
 </svg>
