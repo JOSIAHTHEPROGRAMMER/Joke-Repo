@@ -266,3 +266,4 @@ I use hex codes,
 But I'd use RGB for you.
 [2026-10-15] [Programming] How many programmers does it take to screw in a light bulb? ... None. It's a hardware problem.
 [2026-10-17] [Programming] What is a dying programmer's last program? ... Goodbye, world!
+[2026-10-19] [Programming] What is the best prefix for global variables? ... //
