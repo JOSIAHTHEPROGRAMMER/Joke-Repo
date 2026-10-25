@@ -269,3 +269,4 @@ But I'd use RGB for you.
 [2026-10-19] [Programming] What is the best prefix for global variables? ... //
 [2026-10-21] [Programming] What do you call a group of 8 Hobbits? ... A Hobbyte.
 [2026-10-23] [Programming] There are only 10 kinds of people in this world: those who know binary and those who don't.
+[2026-10-25] [Programming] Hey baby I wish your name was asynchronous... ... ... so you'd give me a callback.
