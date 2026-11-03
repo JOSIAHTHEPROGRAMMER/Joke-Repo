@@ -278,3 +278,9 @@ Violets are #0000ff,
 I use hex codes,
 But I'd use RGB for you.
 [2026-11-01] [Programming] Why did the programmer jump on the table? ... Because debug was on his screen.
+[2026-11-03] [Programming] "Knock, knock."
+"Who's there?"
+
+[very long pause]
+
+"Java."
