@@ -9,7 +9,7 @@
   
   <rect width="100%" height="100%" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-11-05</text>
-  <text x="20" y="60" class="text">"Ah that makes sense, I thought you looked a bit off."</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-11-07</text>
+  <text x="20" y="60" class="text">[2026-11-07] [Programming] Why is Linux safe? ... Hackers peak through Windows only.</text>
   
 </svg>
