@@ -289,3 +289,4 @@ The bartender asks it: "What's wrong buddy?"
 "Parity error." it replies. 
 "Ah that makes sense, I thought you looked a bit off."
 [2026-11-07] [Programming] Why is Linux safe? ... Hackers peak through Windows only.
+[2026-11-09] [Programming] The generation of random numbers is too important to be left to chance.
