@@ -28,12 +28,11 @@ jobs:
           cache: npm
 
       # ---------------- Install dependencies ----------------
-      # Use `npm ci` if you commit package-lock.json, otherwise swap to `npm install`
       - name: Install deps
-        run: npm ci || npm install
+        run: npm ci
 
       # ---------------- Debug: are the secrets actually set? ----------------
-      # Safe: prints only SET / MISSING, never the value. Delete once everything works.
+      # Safe: prints only set / MISSING, never the value. Delete once everything works.
       - name: Check secrets
         run: |
           for v in GROQ_API_KEY GEMINI_API_KEY NEWS_API_KEY NEWS_API_KEY_2; do
@@ -61,7 +60,7 @@ jobs:
           git config user.email "silly-bot@users.noreply.github.com"
           git add jokes.txt news.txt joke.svg news.svg reaction.svg
           git commit -m "daily joke + news drop" || echo "No changes"
-          git pull --rebase
+          git pull --rebase --autostash
           git push
 
       # ---------------- Commit 2: Owner reaction ----------------
@@ -71,7 +70,7 @@ jobs:
           git config user.email "${{ github.repository_owner }}@users.noreply.github.com"
           git add reaction.txt
           git commit -m "my take on today's chaos" || echo "No changes"
-          git pull --rebase
+          git pull --rebase --autostash
           git push
 
       # ---------------- Generate GitHub snake ----------------
@@ -89,5 +88,5 @@ jobs:
           git config user.email "silly-bot@users.noreply.github.com"
           git add dist/
           git commit -m "contribution snake update" || echo "No changes"
-          git pull --rebase
+          git pull --rebase --autostash
           git push
