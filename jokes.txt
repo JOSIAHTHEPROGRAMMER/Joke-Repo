@@ -297,3 +297,4 @@ The second string thinks for a minute, then says "I'll take a tequila sunriseJF(
 The first string apologizes, "You'll have to excuse my friend, he's not null-terminated."
 [2026-11-13] [Programming] What's the object-oriented way to become wealthy? ... Inheritance.
 [2026-11-15] [Programming] Why did the programmer jump on the table? ... Because debug was on his screen.
+[2026-11-15] [Programming] If Bill Gates had a dime for every time Windows crashed ... Oh wait, he does.
