@@ -1,45 +1,69 @@
 name: Silly Bot - Daily Chaos + Snake
+
 on:
   schedule:
     - cron: "0 12 */2 * *"
   workflow_dispatch:
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 permissions:
   contents: write
+
+# Never let two runs push at the same time
+concurrency:
+  group: silly-bot
+  cancel-in-progress: false
 
 jobs:
   run:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       # ---------------- Checkout code ----------------
       - uses: actions/checkout@v4
+
       # ---------------- Setup Node.js ----------------
       - uses: actions/setup-node@v4
         with:
           node-version: 24
+          cache: npm
+
       # ---------------- Install dependencies ----------------
+      # Use `npm ci` if you commit package-lock.json, otherwise swap to `npm install`
       - name: Install deps
-        run: npm install
+        run: npm ci || npm install
+
+      # ---------------- Debug: are the secrets actually set? ----------------
+      # Safe: prints only SET / MISSING, never the value. Delete once everything works.
+      - name: Check secrets
+        run: |
+          for v in GROQ_API_KEY GEMINI_API_KEY NEWS_API_KEY NEWS_API_KEY_2; do
+            if [ -n "${!v}" ]; then echo "$v: set"; else echo "$v: MISSING"; fi
+          done
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+          NEWS_API_KEY_2: ${{ secrets.NEWS_API_KEY_2 }}
+
       # ---------------- Bot generation ----------------
       - name: Generate joke, news, reaction
-        run: |
-          node main.js
+        run: node main.js
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           NEWS_API_KEY_2: ${{ secrets.NEWS_API_KEY_2 }}
+
       # ---------------- Commit 1: Bot generated content ----------------
       - name: Commit generated content (bot)
         run: |
           git config user.name "silly-bot"
           git config user.email "silly-bot@users.noreply.github.com"
-          git add jokes.txt news.txt joke.svg news.svg
+          git add jokes.txt news.txt joke.svg news.svg reaction.svg
           git commit -m "daily joke + news drop" || echo "No changes"
+          git pull --rebase
           git push
+
       # ---------------- Commit 2: Owner reaction ----------------
       - name: Commit reaction (owner)
         run: |
@@ -47,7 +71,9 @@ jobs:
           git config user.email "${{ github.repository_owner }}@users.noreply.github.com"
           git add reaction.txt
           git commit -m "my take on today's chaos" || echo "No changes"
+          git pull --rebase
           git push
+
       # ---------------- Generate GitHub snake ----------------
       - name: Generate GitHub snake
         uses: Platane/snk@v3
@@ -55,6 +81,7 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-snake-dark.svg?palette=github-dark
+
       # ---------------- Commit 3: Snake update ----------------
       - name: Commit snake
         run: |
@@ -62,4 +89,5 @@ jobs:
           git config user.email "silly-bot@users.noreply.github.com"
           git add dist/
           git commit -m "contribution snake update" || echo "No changes"
+          git pull --rebase
           git push

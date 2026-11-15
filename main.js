@@ -1,231 +1,236 @@
 import fs from "fs";
 import "dotenv/config";
-import fetch from "node-fetch";
 import { GoogleGenAI } from "@google/genai";
 import { Groq } from "groq-sdk";
 
 const today = new Date();
 const dateStr = today.toISOString().split("T")[0];
+const dayOfYear = Math.floor(
+  (Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()) -
+    Date.UTC(today.getUTCFullYear(), 0, 0)) / 864e5
+);
+// cron runs every 2 days, so step by 2 to alternate properly
+const runIndex = Math.floor(dayOfYear / 2);
 
-const CATEGORY_ROTATION = [
-  "business",
-  "entertainment",
-  "general",
-  "health",
-  "science",
-  "sports",
-  "technology",
-];
-const category = CATEGORY_ROTATION[today.getDay()];
-const useGNews = today.getDate() % 2 === 0;
+const CATEGORIES = ["business", "entertainment", "general", "health", "science", "sports", "technology"];
+const category = CATEGORIES[runIndex % CATEGORIES.length];
+const useGNews = runIndex % 2 === 0;
+
+const COLORS = {
+  business: "#ff9f1a", entertainment: "#ff3f7f", general: "#58a6ff",
+  health: "#1dd3b0", science: "#9b5de5", sports: "#ff6b6b", technology: "#f5c518",
+};
+
+const GROQ_MODEL = process.env.GROQ_MODEL || "llama-3.1-8b-instant";
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+
+// ---------- helpers ----------
+const escapeXml = (s) =>
+  String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;").replace(/'/g, "&apos;");
+
+function wrapText(text, maxChars = 90) {
+  const lines = [];
+  let line = "";
+  for (let word of text.split(/\s+/)) {
+    while (word.length > maxChars) {            // break overlong words
+      if (line) { lines.push(line); line = ""; }
+      lines.push(word.slice(0, maxChars));
+      word = word.slice(maxChars);
+    }
+    if ((line + " " + word).trim().length > maxChars) {
+      lines.push(line);
+      line = word;
+    } else {
+      line = (line + " " + word).trim();
+    }
+  }
+  if (line) lines.push(line);
+  return lines;
+}
 
 function getLastLine(file) {
   if (!fs.existsSync(file)) return "";
-  const lines = fs.readFileSync(file, "utf8").trim().split("\n");
-  return lines[lines.length - 1] || "";
-}
-
-function escapeSvg(text) {
-  return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-}
-
-function wrapText(text, maxChars = 90) {
-  const words = text.split(" ");
-  const lines = [];
-  let line = "";
-  for (const word of words) {
-    if ((line + word).length > maxChars) {
-      lines.push(line.trim());
-      line = word + " ";
-    } else {
-      line += word + " ";
-    }
-  }
-  if (line.trim()) lines.push(line.trim());
-  return lines;
+  return fs.readFileSync(file, "utf8").trim().split("\n").pop() || "";
 }
 
 function writeSvg(filename, title, content, accent, link = null) {
   const lines = wrapText(content);
   const height = 70 + lines.length * 22;
-
-  const textLines = lines
-    .map(
-      (l, i) =>
-        `<text x="20" y="${60 + i * 22}" class="text">${escapeSvg(l)}</text>`
-    )
+  const text = lines
+    .map((l, i) => `<text x="20" y="${60 + i * 22}" class="text">${escapeXml(l)}</text>`)
     .join("\n");
+  const open = link ? `<a href="${escapeXml(link)}" target="_blank" rel="noopener noreferrer">` : "";
+  const close = link ? "</a>" : "";
 
-  const clickableStart = link
-    ? `<a href="${link}" target="_blank" rel="noopener noreferrer">`
-    : "";
-  const clickableEnd = link ? `</a>` : "";
-
-  const svg = `
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="${height}">
+  fs.writeFileSync(filename, `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="${height}">
   <style>
     .bg { fill: #0d1117; }
     .title { font: 700 16px monospace; fill: ${accent}; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
-
-  ${clickableStart}
-  <rect width="100%" height="100%" class="bg"/>
-  <text x="20" y="28" class="title">${escapeSvg(title)}</text>
+  ${open}
+  <rect width="100%" height="100%" rx="8" class="bg"/>
+  <text x="20" y="28" class="title">${escapeXml(title)}</text>
   <text x="880" y="28" text-anchor="end" class="date">${dateStr}</text>
-  ${textLines}
-  ${clickableEnd}
-</svg>
-`.trim();
-
-  fs.writeFileSync(filename, svg);
+  ${text}
+  ${close}
+</svg>`);
 }
 
-const groq = process.env.GROQ_API_KEY
-  ? new Groq({ apiKey: process.env.GROQ_API_KEY })
-  : null;
-
-const geminiAI = process.env.GEMINI_API_KEY
-  ? new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY })
-  : null;
-
-async function generateGroq(prompt) {
-  if (!groq) throw new Error("no groq");
-  const res = await groq.chat.completions.create({
-    messages: [{ role: "user", content: prompt }],
-    model: "llama-3.1-8b-instant",
-    temperature: 0.9,
-    max_completion_tokens: 60,
-  });
-  const text = res.choices?.[0]?.message?.content?.trim();
-  if (!text) throw new Error("empty groq");
-  return text.replace(/\n/g, " ");
+async function fetchJson(url) {
+  const res = await fetch(url, { signal: AbortSignal.timeout(10_000) });
+  if (!res.ok) throw new Error(`HTTP ${res.status} from ${new URL(url).hostname}`);
+  return res.json();
 }
 
-async function generateGemini(prompt) {
-  if (!geminiAI) throw new Error("no gemini");
-  const res = await geminiAI.models.generateContent({
-    model: "gemini-2.0-flash",
-    contents: prompt,
-  });
-  const text = res.candidates?.[0]?.content?.parts?.[0]?.text?.trim();
-  if (!text) throw new Error("empty gemini");
-  return text.replace(/\n/g, " ");
-}
+// ---------- AI ----------
+const SYSTEM =
+  "You write one-line sarcastic reactions to news headlines, from the point of view of a tired software developer. " +
+  "Rules: one sentence, under 140 characters, lowercase is fine, no quotes, no hashtags, no emojis. " +
+  "Output ONLY the reaction.";
 
-async function generateWithFallback(prompt) {
-  try {
-    return await generateGroq(prompt);
-  } catch (e1) {
+const cleanReaction = (t) =>
+  t.replace(/\s+/g, " ").replace(/^["'“”‘’]+|["'“”‘’]+$/g, "").trim();
+
+const providers = [
+  {
+    name: "groq",
+    enabled: !!process.env.GROQ_API_KEY,
+    async run(headline) {
+      const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+      const res = await groq.chat.completions.create({
+        model: GROQ_MODEL,
+        temperature: 0.9,
+        max_completion_tokens: 80,
+        messages: [
+          { role: "system", content: SYSTEM },
+          { role: "user", content: `Headline: ${headline}` },
+        ],
+      });
+      return res.choices?.[0]?.message?.content;
+    },
+  },
+  {
+    name: "gemini",
+    enabled: !!process.env.GEMINI_API_KEY,
+    async run(headline) {
+      const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+      const res = await ai.models.generateContent({
+        model: GEMINI_MODEL,
+        contents: `Headline: ${headline}`,
+        config: {
+          systemInstruction: SYSTEM,
+          temperature: 0.9,
+          maxOutputTokens: 100,
+          thinkingConfig: { thinkingBudget: 0 }, // don't burn tokens on thinking
+        },
+      });
+      return res.text;
+    },
+  },
+];
+
+const FALLBACKS = [
+  "yeah… that checks out.",
+  "cool. cool. totally normal.",
+  "this is why we can’t have nice things.",
+  "i should’ve stayed in bed.",
+];
+
+async function generateReaction(headline) {
+  for (const p of providers) {
+    if (!p.enabled) {
+      console.warn(`[${p.name}] skipped: API key not set`);
+      continue;
+    }
     try {
-      if (geminiAI) {
-        return await generateGemini(prompt);
-      }
-    } catch (e2) {}
-    const fallback = [
-      "yeah… that checks out.",
-      "cool. cool. totally normal.",
-      "this is why we can’t have nice things.",
-      "i should’ve stayed in bed.",
-    ];
-    return fallback[Math.floor(Math.random() * fallback.length)];
-  }
-}
-
-async function fetchNewsAPI(category) {
-  if (!process.env.NEWS_API_KEY) throw new Error("no newsapi");
-  const url = `https://newsapi.org/v2/top-headlines?category=${category}&language=en&pageSize=1&apiKey=${process.env.NEWS_API_KEY}`;
-  const res = await fetch(url);
-  const data = await res.json();
-  const article = data?.articles?.[0];
-  if (!article) throw new Error("no article");
-  return { title: article.title, url: article.url };
-}
-
-async function fetchGNews(category) {
-  if (!process.env.NEWS_API_KEY_2) throw new Error("no gnews");
-  const url = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&max=1&apikey=${process.env.NEWS_API_KEY_2}`;
-  const res = await fetch(url);
-  const data = await res.json();
-  const article = data?.articles?.[0];
-  if (!article) throw new Error("no article");
-  return { title: article.title, url: article.url };
-}
-
-async function fetchNewsSafe() {
-  try {
-    return useGNews
-      ? await fetchGNews(category)
-      : await fetchNewsAPI(category);
-  } catch (e1) {
-    try {
-      return useGNews
-        ? await fetchNewsAPI(category)
-        : await fetchGNews(category);
-    } catch (e2) {
-      return {
-        title: "Breaking: nothing happened today",
-        url: "https://github.com",
-      };
+      const text = cleanReaction((await p.run(headline)) || "");
+      if (text.length < 5 || text.length > 250) throw new Error(`bad output length (${text.length})`);
+      console.log(`[${p.name}] ok`);
+      return { text, source: p.name };
+    } catch (e) {
+      console.warn(`[${p.name}] failed: ${e.message}`);
     }
   }
+  return { text: FALLBACKS[Math.floor(Math.random() * FALLBACKS.length)], source: "fallback" };
 }
 
+// ---------- news ----------
+const stripSource = (t) => t.replace(/\s+[-–|]\s+[^-–|]{2,40}$/, "").trim();
+
+async function fetchNewsAPI() {
+  const key = process.env.NEWS_API_KEY;
+  if (!key) throw new Error("NEWS_API_KEY not set");
+  const data = await fetchJson(
+    `https://newsapi.org/v2/top-headlines?category=${category}&language=en&country=us&pageSize=5&apiKey=${key}`
+  );
+  const a = data.articles?.find((x) => x.title && x.title !== "[Removed]");
+  if (!a) throw new Error("no article");
+  return { title: stripSource(a.title), url: a.url };
+}
+
+async function fetchGNews() {
+  const key = process.env.NEWS_API_KEY_2;
+  if (!key) throw new Error("NEWS_API_KEY_2 not set");
+  const data = await fetchJson(
+    `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&max=1&apikey=${key}`
+  );
+  const a = data.articles?.[0];
+  if (!a) throw new Error("no article");
+  return { title: stripSource(a.title), url: a.url };
+}
+
+async function fetchNews() {
+  const order = useGNews
+    ? [["gnews", fetchGNews], ["newsapi", fetchNewsAPI]]
+    : [["newsapi", fetchNewsAPI], ["gnews", fetchGNews]];
+  for (const [name, fn] of order) {
+    try {
+      const r = await fn();
+      console.log(`[news:${name}] ok`);
+      return r;
+    } catch (e) {
+      console.warn(`[news:${name}] failed: ${e.message}`);
+    }
+  }
+  return { title: "Breaking: nothing happened today", url: "https://github.com" };
+}
+
+// ---------- joke ----------
 async function getJoke() {
   try {
-    const res = await fetch("https://v2.jokeapi.dev/joke/Programming");
-    const data = await res.json();
-    if (data.error) throw new Error();
-    if (data.type === "single") {
-      return `[${data.category}] ${data.joke}`;
-    }
-    if (data.type === "twopart") {
-      return `[${data.category}] ${data.setup} ... ${data.delivery}`;
-    }
-  } catch (e) {}
-  return "[Joke] something broke but pretend this was funny";
+    const d = await fetchJson(
+      "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit"
+    );
+    if (d.error) throw new Error(d.message);
+    return d.type === "single"
+      ? `[${d.category}] ${d.joke.replace(/\s+/g, " ")}`
+      : `[${d.category}] ${d.setup} ... ${d.delivery}`;
+  } catch (e) {
+    console.warn(`[joke] failed: ${e.message}`);
+    return "[Joke] something broke but pretend this was funny";
+  }
 }
 
+// ---------- main ----------
 async function main() {
-  const article = await fetchNewsSafe();
-  const headline = article.title;
-  const articleUrl = article.url;
-
-  const reactionPrompt = `one sarcastic developer reaction to: "${headline}"`;
-
-  const joke = await getJoke();
-  const reaction = await generateWithFallback(reactionPrompt);
+  const article = await fetchNews();
+  const [joke, reaction] = await Promise.all([getJoke(), generateReaction(article.title)]);
 
   fs.appendFileSync("jokes.txt", `[${dateStr}] ${joke}\n`);
-  fs.appendFileSync(
-    "news.txt",
-    `[${dateStr}] [${category.toUpperCase()}] ${headline}\n`
-  );
-  fs.writeFileSync("reaction.txt", reaction);
-
-  const categoryColors = {
-    business: "#ff9f1a",
-    entertainment: "#ff3f7f",
-    general: "#58a6ff",
-    health: "#1dd3b0",
-    science: "#9b5de5",
-    sports: "#ff6b6b",
-    technology: "#f5c518",
-  };
+  fs.appendFileSync("news.txt", `[${dateStr}] [${category.toUpperCase()}] ${article.title}\n`);
+  fs.writeFileSync("reaction.txt", reaction.text);
 
   writeSvg("joke.svg", "Daily Joke", getLastLine("jokes.txt"), "#3fb950");
-  writeSvg(
-    "news.svg",
-    "Daily News",
-    headline,
-    categoryColors[category] || "#58a6ff",
-    articleUrl
-  );
+  writeSvg("news.svg", "Daily News", article.title, COLORS[category], article.url);
+  writeSvg("reaction.svg", "Dev Reaction", reaction.text, "#f778ba");
 
-  console.log("Joke:", joke);
-  console.log("Headline:", headline);
-  console.log("Reaction:", reaction);
+  console.log({ category, joke, headline: article.title, reaction });
 }
 
-main().catch(() => {});
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});
