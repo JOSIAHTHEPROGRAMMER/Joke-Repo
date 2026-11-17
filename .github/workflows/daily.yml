@@ -59,7 +59,9 @@ jobs:
           git config user.name "silly-bot"
           git config user.email "silly-bot@users.noreply.github.com"
           git add jokes.txt news.txt joke.svg news.svg reaction.svg
-          git commit -m "daily joke + news drop" || echo "No changes"
+          git commit -m "daily joke + news drop" \
+            -m "Co-authored-by: ${{ github.repository_owner }} <${{ github.repository_owner }}@users.noreply.github.com>" \
+            || echo "No changes"
           git pull --rebase --autostash
           git push
 
@@ -69,7 +71,9 @@ jobs:
           git config user.name "${{ github.repository_owner }}"
           git config user.email "${{ github.repository_owner }}@users.noreply.github.com"
           git add reaction.txt
-          git commit -m "my take on today's chaos" || echo "No changes"
+          git commit -m "my take on today's chaos" \
+            -m "Co-authored-by: silly-bot <silly-bot@users.noreply.github.com>" \
+            || echo "No changes"
           git pull --rebase --autostash
           git push
 
@@ -87,6 +91,8 @@ jobs:
           git config user.name "silly-bot"
           git config user.email "silly-bot@users.noreply.github.com"
           git add dist/
-          git commit -m "contribution snake update" || echo "No changes"
+          git commit -m "contribution snake update" \
+            -m "Co-authored-by: ${{ github.repository_owner }} <${{ github.repository_owner }}@users.noreply.github.com>" \
+            || echo "No changes"
           git pull --rebase --autostash
           git push
