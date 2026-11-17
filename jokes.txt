@@ -299,3 +299,4 @@ The first string apologizes, "You'll have to excuse my friend, he's not null-ter
 [2026-11-15] [Programming] Why did the programmer jump on the table? ... Because debug was on his screen.
 [2026-11-15] [Programming] If Bill Gates had a dime for every time Windows crashed ... Oh wait, he does.
 [2026-11-17] [Programming] Why did the programmer jump on the table? ... Because debug was on his screen.
+[2026-11-17] [Programming] A guy walks into a bar and asks for 1.4 root beers. The bartender says "I'll have to charge you extra, that's a root beer float". The guy says "In that case, better make it a double."
