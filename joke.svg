@@ -8,8 +8,8 @@
   
   <rect width="100%" height="100%" rx="8" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-11-17</text>
-  <text x="20" y="60" class="text">[2026-11-17] [Programming] How do you tell HTML from HTML5? - Try it out in Internet</text>
-<text x="20" y="82" class="text">Explorer - Did it work? - No? - It&apos;s HTML5.</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-11-19</text>
+  <text x="20" y="60" class="text">[2026-11-19] [Programming] Being a self-taught developer is almost the same as being a cut</text>
+<text x="20" y="82" class="text">neck chicken because you have no sense of direction in the beginning.</text>
   
 </svg>
