@@ -1,15 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="114">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="92">
   <style>
     .bg { fill: #0d1117; }
-    .title { font: 700 16px monospace; fill: #ff9f1a; }
+    .title { font: 700 16px monospace; fill: #ff3f7f; }
     .text { font: 14px monospace; fill: #c9d1d9; }
     .date { font: 12px monospace; fill: #8b949e; }
   </style>
-  <a href="https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-18-dow-sp-500-nasdaq-nvidia-earnings-anthropic-ipo-143530588.html" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.sacnilk.com/quicknews/Scene_2026_Box_Office_Collection_Day_16" target="_blank" rel="noopener noreferrer">
   <rect width="100%" height="100%" rx="8" class="bg"/>
   <text x="20" y="28" class="title">Daily News</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-11-19</text>
-  <text x="20" y="60" class="text">Stock market today: Dow slides, S&amp;P 500 wobbles as Nvidia clears hurdle, Anthropic</text>
-<text x="20" y="82" class="text">prepares to price its IPO</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-11-21</text>
+  <text x="20" y="60" class="text">Scene Box Office Collection Day 16</text>
   </a>
 </svg>
