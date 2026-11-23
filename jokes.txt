@@ -303,3 +303,4 @@ The first string apologizes, "You'll have to excuse my friend, he's not null-ter
 [2026-11-17] [Programming] How do you tell HTML from HTML5? - Try it out in Internet Explorer - Did it work? - No? - It's HTML5.
 [2026-11-19] [Programming] Being a self-taught developer is almost the same as being a cut neck chicken because you have no sense of direction in the beginning.
 [2026-11-21] [Programming] How many programmers does it take to screw in a light bulb? ... None. It's a hardware problem.
+[2026-11-23] [Programming] How do you generate a random string? ... Put a Windows user in front of Vim and tell them to exit.
