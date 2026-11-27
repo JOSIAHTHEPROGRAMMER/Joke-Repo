@@ -8,7 +8,7 @@
   
   <rect width="100%" height="100%" rx="8" class="bg"/>
   <text x="20" y="28" class="title">Dev Reaction</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-11-25</text>
-  <text x="20" y="60" class="text">cool, another thing to consider when i&apos;m already debugging my life.</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-11-27</text>
+  <text x="20" y="60" class="text">great, another legacy system to maintain, and this one bites.</text>
   
 </svg>

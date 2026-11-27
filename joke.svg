@@ -8,7 +8,7 @@
   
   <rect width="100%" height="100%" rx="8" class="bg"/>
   <text x="20" y="28" class="title">Daily Joke</text>
-  <text x="880" y="28" text-anchor="end" class="date">2026-11-25</text>
-  <text x="20" y="60" class="text">[2026-11-25] [Programming] I&apos;d tell you a joke about NAT but I would have to translate.</text>
+  <text x="880" y="28" text-anchor="end" class="date">2026-11-27</text>
+  <text x="20" y="60" class="text">[2026-11-27] [Programming] ASCII silly question, get a silly ANSI.</text>
   
 </svg>
